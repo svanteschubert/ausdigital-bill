@@ -18,7 +18,7 @@
     "/invoices" : {
       "post" : {
         "summary" : "Send an invoice to the buyer",
-        "description" : "Send an invoice to the buyer",
+        "description" : "Send a new invoice to the buyer",
         "operationId" : "createInvoice",
         "security" : [ {
           "apikey" : [ ]
