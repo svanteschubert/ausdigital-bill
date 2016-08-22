@@ -3,9 +3,9 @@
   "host" : "api.e-invoice.com",
   "basePath" : "/v1",
   "info" : {
-    "version" : "0.1",
-    "title" : "REST API implementation of e-Invoice",
-    "description" : "REST API implementation of e-Invoice"
+    "version" : "1.0",
+    "title" : "Billing services interface specification",
+    "description" : "RESTful version of OASIS UBL2.1 Billing semantics - include the Invoice, Credit Note, Debit Note, and Application Response documents."
   },
   "securityDefinitions" : {
     "apikey" : {
