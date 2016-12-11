@@ -584,7 +584,6 @@
                     </xsd:documentation>
                 </xsd:annotation>
             </xsd:element>
-            party
         </xsd:sequence>
     </xsd:complexType>
 
