@@ -49,12 +49,10 @@
                     </xsd:documentation>
                 </xsd:annotation>
             </xsd:element>
-            <!--no usage found -->
             <xsd:element name="ProfileExecutionID" type="IdentifierType" minOccurs="0" maxOccurs="1">
                 <xsd:annotation>
-                    <xsd:documentation>Identifies an instance of executing a profile, to associate all transactions in a
-                        collaboration allowing control of its relation to other documents exchanged as part of the same
-                        process.
+                    <xsd:documentation>
+                        Identifies an instance of executing a profile, to associate all transactions in a collaboration allowing control of its relation to other documents exchanged as part of the same process.
                     </xsd:documentation>
                 </xsd:annotation>
             </xsd:element>
@@ -173,13 +171,13 @@
                         services to the Buyer.
                     </xsd:documentation>
                 </xsd:annotation>
-            </xsd:element> <!-- SupplierParty in the model -->
+            </xsd:element>
             <xsd:element name="AccountingCustomerParty" type="CustomerPartyType" minOccurs="1" maxOccurs="1">
                 <xsd:annotation>
                     <xsd:documentation>The accounting customer party. The Party that procures goods or services.
                     </xsd:documentation>
                 </xsd:annotation>
-            </xsd:element> <!-- CustomerParty in the model -->
+            </xsd:element>
             <xsd:element name="PayeeParty" type="PartyType" minOccurs="0" maxOccurs="1">
                 <xsd:annotation>
                     <xsd:documentation>The payee. The Party that receives the Payment.</xsd:documentation>
@@ -217,6 +215,121 @@
                     <xsd:documentation>A line describing an invoice item.</xsd:documentation>
                 </xsd:annotation>
             </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="UBLExtensionsType">
+        <xsd:annotation>
+            <xsd:documentation>
+                A container for all extensions present in the document.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="UBLExtension" type="UBLExtensionType" minOccurs="1" maxOccurs="unbounded">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        A single extension for private use.
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="UBLExtensionType">
+        <xsd:annotation>
+            <xsd:documentation>
+                A single extension for private use.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="ID" type="IdentifierType" minOccurs="0" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        An identifier for the Extension assigned by the creator of the extension.
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="Name" type="TextType" minOccurs="0" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        A name for the Extension assigned by the creator of the extension.
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="ExtensionAgencyID" type="IdentifierType" minOccurs="0" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        An agency that maintains one or more Extensions.
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="ExtensionAgencyName" type="TextType" minOccurs="0" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        The name of the agency that maintains the Extension.
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="ExtensionVersionID" type="IdentifierType" minOccurs="0" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        The version of the Extension.
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="ExtensionAgencyURI" type="IdentifierType" minOccurs="0" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        A URI for the Agency that maintains the Extension.
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="ExtensionURI" type="IdentifierType" minOccurs="0" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        A URI for the Extension.
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="ExtensionReasonCode" type="CodeType" minOccurs="0" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        A code for reason the Extension is being included.
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="ExtensionReason" type="TextType" minOccurs="0" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        A description of the reason for the Extension.
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="ExtensionContent" type="ExtensionContentType" minOccurs="1" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        The definition of the extension content.
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ExtensionContentType">
+        <xsd:sequence>
+            <xsd:any namespace="##other" processContents="lax"
+                     minOccurs="1" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        Any element in any namespace other than the UBL extension
+                        namespace is allowed to be the apex element of an extension.
+                        Only those elements found in the UBL schemas and in the
+                        trees of schemas imported in this module are validated.
+                        Any element for which there is no schema declaration in any
+                        of the trees of schemas passes validation and is not
+                        treated as a schema constraint violation.
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:any>
         </xsd:sequence>
     </xsd:complexType>
 
@@ -471,13 +584,7 @@
                     </xsd:documentation>
                 </xsd:annotation>
             </xsd:element>
-            <xsd:element name="Attachment" type="AttachmentType" minOccurs="0" maxOccurs="1">
-                <xsd:annotation>
-                    <xsd:documentation xml:lang="en">
-                        The referenced document as an attachment to the document from which it is referenced.
-                    </xsd:documentation>
-                </xsd:annotation>
-            </xsd:element>
+            party
         </xsd:sequence>
     </xsd:complexType>
 
@@ -506,27 +613,7 @@
         </xsd:sequence>
     </xsd:complexType>
 
-    <!--TODO: check if update BaseBinaryObjectType will be enough -->
     <xsd:complexType name="BinaryObjectType">
-        <xsd:annotation>
-            <xsd:documentation xml:lang="en">
-                A set of finite-length sequences of binary octets.
-            </xsd:documentation>
-        </xsd:annotation>
-        <xsd:simpleContent>
-            <xsd:restriction base="BaseBinaryObjectType">
-                <xsd:attribute name="mimeCode" type="xsd:normalizedString" use="required">
-                    <xsd:annotation>
-                        <xsd:documentation xml:lang="en">
-                            The mime type of the binary object.
-                        </xsd:documentation>
-                    </xsd:annotation>
-                </xsd:attribute>
-            </xsd:restriction>
-        </xsd:simpleContent>
-    </xsd:complexType>
-
-    <xsd:complexType name="BaseBinaryObjectType">
         <xsd:annotation>
             <xsd:documentation xml:lang="en">
                 A set of finite-length sequences of binary octets.
@@ -541,7 +628,7 @@
                         </xsd:documentation>
                     </xsd:annotation>
                 </xsd:attribute>
-                <xsd:attribute name="mimeCode" type="xsd:normalizedString" use="optional">
+                <xsd:attribute name="mimeCode" type="xsd:normalizedString" use="required">
                     <xsd:annotation>
                         <xsd:documentation xml:lang="en">
                             The mime type of the binary object.
@@ -1104,11 +1191,6 @@
     <xsd:complexType name="NumericType">
         <xsd:annotation>
             <xsd:documentation xml:lang="en">
-                Numeric information that is assigned or is determined by calculation, counting, or sequencing. It does not require a unit of quantity or unit of measure.
-            </xsd:documentation>
-        </xsd:annotation>
-        <xsd:annotation>
-            <xsd:documentation xml:lang="en">
                 Numeric information that is assigned or is determined by calculation, counting, or sequencing. It does
                 not require a unit of quantity or unit of measure.
             </xsd:documentation>
@@ -1133,28 +1215,8 @@
             </xsd:documentation>
         </xsd:annotation>
         <xsd:simpleContent>
-            <xsd:restriction base="BaseAmountType">
-                <xsd:attribute name="currencyID" type="xsd:normalizedString" use="required">
-                    <xsd:annotation>
-                        <xsd:documentation xml:lang="en">
-                            The currency of the amount.
-                        </xsd:documentation>
-                    </xsd:annotation>
-                </xsd:attribute>
-            </xsd:restriction>
-        </xsd:simpleContent>
-    </xsd:complexType>
-
-    <xsd:complexType name="BaseAmountType">
-        <xsd:annotation>
-            <xsd:documentation xml:lang="en">
-                A number of monetary units specified in a currency where the unit of the currency is explicit or
-                implied.
-            </xsd:documentation>
-        </xsd:annotation>
-        <xsd:simpleContent>
             <xsd:extension base="xsd:decimal">
-                <xsd:attribute name="currencyID" type="xsd:normalizedString" use="optional">
+                <xsd:attribute name="currencyID" type="xsd:normalizedString" use="required">
                     <xsd:annotation>
                         <xsd:documentation xml:lang="en">
                             The currency of the amount.
@@ -1605,127 +1667,6 @@
             </xsd:element>
         </xsd:sequence>
     </xsd:complexType>
-
-    <xsd:complexType name="UBLExtensionsType">
-        <xsd:annotation>
-            <xsd:documentation>
-                A container for all extensions present in the document.
-            </xsd:documentation>
-        </xsd:annotation>
-        <xsd:sequence>
-            <xsd:element name="UBLExtension" type="UBLExtensionType" minOccurs="1" maxOccurs="unbounded">
-                <xsd:annotation>
-                    <xsd:documentation>
-                        A single extension for private use.
-                    </xsd:documentation>
-                </xsd:annotation>
-            </xsd:element>
-        </xsd:sequence>
-    </xsd:complexType>
-    <xsd:complexType name="UBLExtensionType">
-        <xsd:annotation>
-            <xsd:documentation>
-                A single extension for private use.
-            </xsd:documentation>
-        </xsd:annotation>
-        <xsd:sequence>
-            <xsd:element name="ID" type="IdentifierType" minOccurs="0" maxOccurs="1">
-                <xsd:annotation>
-                    <xsd:documentation>
-                        An identifier for the Extension assigned by the creator of the extension.
-                    </xsd:documentation>
-                </xsd:annotation>
-            </xsd:element>
-            <xsd:element name="Name" type="TextType" minOccurs="0" maxOccurs="1">
-                <xsd:annotation>
-                    <xsd:documentation>
-                        A name for the Extension assigned by the creator of the extension.
-                    </xsd:documentation>
-                </xsd:annotation>
-            </xsd:element>
-            <xsd:element name="ExtensionAgencyID" type="IdentifierType" minOccurs="0" maxOccurs="1">
-                <xsd:annotation>
-                    <xsd:documentation>
-                        An agency that maintains one or more Extensions.
-                    </xsd:documentation>
-                </xsd:annotation>
-            </xsd:element>
-            <xsd:element name="ExtensionAgencyName" type="TextType" minOccurs="0" maxOccurs="1">
-                <xsd:annotation>
-                    <xsd:documentation>
-                        The name of the agency that maintains the Extension.
-                    </xsd:documentation>
-                </xsd:annotation>
-            </xsd:element>
-            <xsd:element name="ExtensionVersionID" type="IdentifierType" minOccurs="0" maxOccurs="1">
-                <xsd:annotation>
-                    <xsd:documentation>
-                        The version of the Extension.
-                    </xsd:documentation>
-                </xsd:annotation>
-            </xsd:element>
-            <xsd:element name="ExtensionAgencyURI" type="IdentifierType" minOccurs="0" maxOccurs="1">
-                <xsd:annotation>
-                    <xsd:documentation>
-                        A URI for the Agency that maintains the Extension.
-                    </xsd:documentation>
-                </xsd:annotation>
-            </xsd:element>
-            <xsd:element name="ExtensionURI" type="IdentifierType" minOccurs="0" maxOccurs="1">
-                <xsd:annotation>
-                    <xsd:documentation>
-                        A URI for the Extension.
-                    </xsd:documentation>
-                </xsd:annotation>
-            </xsd:element>
-            <xsd:element name="ExtensionReasonCode" type="CodeType" minOccurs="0" maxOccurs="1">
-                <xsd:annotation>
-                    <xsd:documentation>
-                        A code for reason the Extension is being included.
-                    </xsd:documentation>
-                </xsd:annotation>
-            </xsd:element>
-            <xsd:element name="ExtensionReason" type="TextType" minOccurs="0" maxOccurs="1">
-                <xsd:annotation>
-                    <xsd:documentation>
-                        A description of the reason for the Extension.
-                    </xsd:documentation>
-                </xsd:annotation>
-            </xsd:element>
-            <xsd:element name="ExtensionContent" type="ExtensionContentType" minOccurs="1" maxOccurs="1">
-                <xsd:annotation>
-                    <xsd:documentation>
-                        The definition of the extension content.
-                    </xsd:documentation>
-                </xsd:annotation>
-            </xsd:element>
-        </xsd:sequence>
-    </xsd:complexType>
-
-    <xsd:complexType name="ExtensionContentType">
-        <xsd:annotation>
-            <xsd:documentation xml:lang="en">
-
-            </xsd:documentation>
-        </xsd:annotation>
-        <xsd:sequence>
-            <xsd:any namespace="##other" processContents="lax"
-                     minOccurs="1" maxOccurs="1">
-                <xsd:annotation>
-                    <xsd:documentation>
-                        Any element in any namespace other than the UBL extension
-                        namespace is allowed to be the apex element of an extension.
-                        Only those elements found in the UBL schemas and in the
-                        trees of schemas imported in this module are validated.
-                        Any element for which there is no schema declaration in any
-                        of the trees of schemas passes validation and is not
-                        treated as a schema constraint violation.
-                    </xsd:documentation>
-                </xsd:annotation>
-            </xsd:any>
-        </xsd:sequence>
-    </xsd:complexType>
-
 </xsd:schema>
         <!-- ===== Copyright Notice ===== --><!--
   Copyright DBC
