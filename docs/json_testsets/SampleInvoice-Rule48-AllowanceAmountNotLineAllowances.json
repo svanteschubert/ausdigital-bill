@@ -1,0 +1,462 @@
+{
+    "name": {
+        "namespaceURI": "urn:oasis:names:specification:ubl:schema:xsd:Invoice-2-ausdigital",
+        "localPart": "Invoice",
+        "prefix": "",
+        "key": "{urn:oasis:names:specification:ubl:schema:xsd:Invoice-2-ausdigital}Invoice",
+        "string": "{urn:oasis:names:specification:ubl:schema:xsd:Invoice-2-ausdigital}Invoice"
+    },
+    "value": {
+        "ublVersionID": {
+            "value": "2.1"
+        },
+        "customizationID": {
+            "schemeAgencyID": "dbc",
+            "value": "urn:resources.digitalbusinesscouncil.com.au:dbc:invoicing:documents:core invoice:xsd::core invoice 1##urn:resources.digitalbusinesscouncil.com.au:dbc:einvoicing:process:einvoicing01:ver1.0"
+        },
+        "profileID": {
+            "schemeAgencyID": "dbc",
+            "value": "urn:resources.digitalbusinesscouncil.com.au:dbc:einvoicing:ver1.0"
+        },
+        "id": {
+            "value": "TOSL-108-A"
+        },
+        "issueDate": {
+            "value": {
+                "year": 2016,
+                "month": 7,
+                "day": 1,
+                "hour": null,
+                "minute": null,
+                "second": null,
+                "fractionalSecond": null,
+                "timezone": null,
+                "date": "2016-07-01T00:00:00.000Z"
+            }
+        },
+        "dueDate": {
+            "value": {
+                "year": 2016,
+                "month": 8,
+                "day": 1,
+                "hour": null,
+                "minute": null,
+                "second": null,
+                "fractionalSecond": null,
+                "timezone": null,
+                "date": "2016-08-01T00:00:00.000Z"
+            }
+        },
+        "invoiceTypeCode": {
+            "listName": "Document Type Code",
+            "listAgencyID": "6",
+            "value": "388"
+        },
+        "note": [
+            {
+                "value": "Tax Invoice"
+            }
+        ],
+        "documentCurrencyCode": {
+            "listID": "ISO 4217 Alpha",
+            "listAgencyID": "6",
+            "value": "AUD"
+        },
+        "buyerReference": {
+            "value": "CC-3352626"
+        },
+        "orderReference": {
+            "id": {
+                "value": "SB002"
+            }
+        },
+        "accountingSupplierParty": {
+            "party": {
+                "partyIdentification": [
+                    {
+                        "id": {
+                            "schemeID": "urn:oasis:names:tc:ebcore:partyid-type:iso6523:088",
+                            "schemeAgencyID": "GS1",
+                            "value": "4035811611014"
+                        }
+                    }
+                ],
+                "partyName": [
+                    {
+                        "name": {
+                            "value": "ACME Holdings"
+                        }
+                    }
+                ],
+                "postalAddress": {
+                    "cityName": {
+                        "value": "Adelaide"
+                    },
+                    "postalZone": {
+                        "value": "5000"
+                    },
+                    "countrySubentity": {
+                        "value": "South Australia"
+                    },
+                    "addressLine": [
+                        {
+                            "line": {
+                                "value": "88 Grenfell St"
+                            }
+                        }
+                    ],
+                    "country": {
+                        "identificationCode": {
+                            "listName": "Country Identification Code",
+                            "listAgencyID": "5",
+                            "value": "AU"
+                        }
+                    }
+                },
+                "partyLegalEntity": [
+                    {
+                        "companyID": {
+                            "schemeID": "urn:oasis:names:tc:ebcore:partyid-type:iso6523:0151",
+                            "value": "987654321"
+                        }
+                    }
+                ]
+            }
+        },
+        "accountingCustomerParty": {
+            "party": {
+                "partyIdentification": [
+                    {
+                        "id": {
+                            "schemeID": "urn:oasis:names:tc:ebcore:partyid-type:iso6523:0151",
+                            "value": "51083392303"
+                        }
+                    }
+                ],
+                "partyName": [
+                    {
+                        "name": {
+                            "value": "Governmment Agency"
+                        }
+                    }
+                ],
+                "postalAddress": {
+                    "cityName": {
+                        "value": "Willunga"
+                    },
+                    "postalZone": {
+                        "value": "5172"
+                    },
+                    "countrySubentity": {
+                        "value": "South Australia"
+                    },
+                    "addressLine": [
+                        {
+                            "line": {
+                                "value": "Delabole Road"
+                            }
+                        }
+                    ],
+                    "country": {
+                        "identificationCode": {
+                            "listName": "Country Identification Code",
+                            "listAgencyID": "5",
+                            "value": "AU"
+                        }
+                    }
+                },
+                "partyLegalEntity": [
+                    {
+                        "companyID": {
+                            "schemeID": "urn:oasis:names:tc:ebcore:partyid-type:iso6523:0151",
+                            "value": "51083392303"
+                        }
+                    }
+                ]
+            },
+            "buyerContact": {
+                "id": {
+                    "value": "Tony Curtis"
+                },
+                "telephone": {
+                    "value": "(08) 8556 2345"
+                },
+                "electronicMail": {
+                    "value": "curtis@willunga.gov.au"
+                }
+            }
+        },
+        "delivery": [
+            {
+                "actualDeliveryDate": {
+                    "value": {
+                        "year": 2016,
+                        "month": 3,
+                        "day": 2,
+                        "hour": null,
+                        "minute": null,
+                        "second": null,
+                        "fractionalSecond": null,
+                        "timezone": null,
+                        "date": "2016-03-02T00:00:00.000Z"
+                    }
+                },
+                "deliveryAddress": {
+                    "cityName": {
+                        "value": "Adelaide"
+                    },
+                    "postalZone": {
+                        "value": "5000"
+                    },
+                    "countrySubentity": {
+                        "value": "South Australia"
+                    },
+                    "addressLine": [
+                        {
+                            "line": {
+                                "value": "202 North Terrace"
+                            }
+                        }
+                    ],
+                    "country": {
+                        "identificationCode": {
+                            "listName": "Country Identification Code",
+                            "listAgencyID": "5",
+                            "value": "AU"
+                        }
+                    }
+                }
+            }
+        ],
+        "paymentMeans": [
+            {
+                "id": {
+                    "value": "EFT"
+                },
+                "paymentMeansCode": {
+                    "listID": "UN/ECE 4461",
+                    "value": "2"
+                },
+                "instructionID": {
+                    "value": "888276612262653"
+                },
+                "payeeFinancialAccount": {
+                    "id": {
+                        "value": "2000987211"
+                    },
+                    "financialInstitutionBranch": {
+                        "id": {
+                            "schemeName": "BSB",
+                            "value": "086016"
+                        },
+                        "name": {
+                            "value": "NAB Adelaide"
+                        }
+                    }
+                }
+            }
+        ],
+        "taxTotal": [
+            {
+                "taxAmount": {
+                    "currencyID": "AUD",
+                    "value": 250
+                }
+            }
+        ],
+        "legalMonetaryTotal": {
+            "lineExtensionAmount": {
+                "currencyID": "AUD",
+                "value": 3500
+            },
+            "taxExclusiveAmount": {
+                "currencyID": "AUD",
+                "value": 3500
+            },
+            "taxInclusiveAmount": {
+                "currencyID": "AUD",
+                "value": 3850
+            },
+            "allowanceTotalAmount": {
+                "currencyID": "AUD",
+                "value": 100
+            },
+            "chargeTotalAmount": {
+                "currencyID": "AUD",
+                "value": 600
+            },
+            "payableAmount": {
+                "currencyID": "AUD",
+                "value": 3850
+            }
+        },
+        "invoiceLine": [
+            {
+                "id": {
+                    "value": "1"
+                },
+                "note": [
+                    {
+                        "value": "A variety of Widgets"
+                    }
+                ],
+                "invoicedQuantity": {
+                    "value": 200
+                },
+                "lineExtensionAmount": {
+                    "currencyID": "AUD",
+                    "value": 2500
+                },
+                "allowanceCharge": [
+                    {
+                        "chargeIndicator": {
+                            "value": false
+                        },
+                        "allowanceChargeReason": [
+                            {
+                                "value": "Promotion"
+                            }
+                        ],
+                        "amount": {
+                            "currencyID": "AUD",
+                            "value": 100
+                        }
+                    },
+                    {
+                        "chargeIndicator": {
+                            "value": true
+                        },
+                        "allowanceChargeReason": [
+                            {
+                                "value": "Packaging"
+                            }
+                        ],
+                        "amount": {
+                            "currencyID": "AUD",
+                            "value": 600
+                        }
+                    }
+                ],
+                "taxTotal": [
+                    {
+                        "taxAmount": {
+                            "currencyID": "AUD",
+                            "value": 300
+                        },
+                        "taxSubtotal": [
+                            {
+                                "taxAmount": {
+                                    "currencyID": "AUD",
+                                    "value": 300
+                                },
+                                "taxCategory": {
+                                    "taxScheme": {
+                                        "id": {
+                                            "value": "GST"
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "item": {
+                    "description": [
+                        {
+                            "value": "Widget"
+                        }
+                    ],
+                    "sellersItemIdentification": {
+                        "id": {
+                            "value": "WDGT-A1733-0436"
+                        }
+                    },
+                    "standardItemIdentification": {
+                        "id": {
+                            "schemeID": "GTIN",
+                            "schemeAgencyID": "GS1",
+                            "value": "9501101021037"
+                        }
+                    }
+                },
+                "price": {
+                    "priceAmount": {
+                        "currencyID": "AUD",
+                        "value": 10
+                    },
+                    "baseQuantity": {
+                        "value": 1
+                    }
+                }
+            },
+            {
+                "id": {
+                    "value": "2"
+                },
+                "note": [
+                    {
+                        "value": "Widget attachments"
+                    }
+                ],
+                "invoicedQuantity": {
+                    "value": 200
+                },
+                "lineExtensionAmount": {
+                    "currencyID": "AUD",
+                    "value": 500
+                },
+                "taxTotal": [
+                    {
+                        "taxAmount": {
+                            "currencyID": "AUD",
+                            "value": 50
+                        },
+                        "taxSubtotal": [
+                            {
+                                "taxAmount": {
+                                    "currencyID": "AUD",
+                                    "value": 50
+                                },
+                                "taxCategory": {
+                                    "taxScheme": {
+                                        "id": {
+                                            "value": "GST"
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "item": {
+                    "description": [
+                        {
+                            "value": "Widget screws"
+                        }
+                    ],
+                    "sellersItemIdentification": {
+                        "id": {
+                            "value": "WDGT-A1733-0437"
+                        }
+                    },
+                    "standardItemIdentification": {
+                        "id": {
+                            "schemeID": "GTIN",
+                            "schemeAgencyID": "GS1",
+                            "value": "9501101021038"
+                        }
+                    }
+                },
+                "price": {
+                    "priceAmount": {
+                        "currencyID": "AUD",
+                        "value": 2.5
+                    },
+                    "baseQuantity": {
+                        "value": 1
+                    }
+                }
+            }
+        ]
+    }
+}

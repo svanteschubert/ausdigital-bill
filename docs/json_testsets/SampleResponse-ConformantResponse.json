@@ -1,0 +1,94 @@
+{
+    "name": {
+        "namespaceURI": "urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2-ausdigital",
+        "localPart": "ApplicationResponse",
+        "prefix": "",
+        "key": "{urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2-ausdigital}ApplicationResponse",
+        "string": "{urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2-ausdigital}ApplicationResponse"
+    },
+    "value": {
+        "ublVersionID": {
+            "value": "2.1"
+        },
+        "customizationID": {
+            "schemeAgencyID": "dbc",
+            "value": "urn:resources.digitalbusinesscouncil.com.au:dbc:invoicing:documents:response:xsd::response 1##urn:resources.digitalbusinesscouncil.com.au:dbc:einvoicing:process:einvoicing04:ver1.0"
+        },
+        "profileID": {
+            "schemeAgencyID": "dbc",
+            "value": "urn:resources.digitalbusinesscouncil.com.au:dbc:einvoicing:ver1.0"
+        },
+        "id": {
+            "value": "RESP-0201991"
+        },
+        "issueDate": {
+            "value": {
+                "year": 2016,
+                "month": 5,
+                "day": 1,
+                "hour": null,
+                "minute": null,
+                "second": null,
+                "fractionalSecond": null,
+                "timezone": null,
+                "date": "2016-05-01T00:00:00.000Z"
+            }
+        },
+        "issueTime": {
+            "value": {
+                "year": null,
+                "month": null,
+                "day": null,
+                "hour": 9,
+                "minute": 30,
+                "second": 47,
+                "fractionalSecond": 0,
+                "timezone": 300,
+                "date": "1970-01-01T04:30:47.000Z"
+            }
+        },
+        "senderParty": {
+            "partyIdentification": [
+                {
+                    "id": {
+                        "schemeID": "urn:oasis:names:tc:ebcore:partyid-type:iso6523:0151",
+                        "value": "51083392303"
+                    }
+                }
+            ]
+        },
+        "receiverParty": {
+            "partyIdentification": [
+                {
+                    "id": {
+                        "schemeID": "urn:oasis:names:tc:ebcore:partyid-type:iso6523:088",
+                        "schemeAgencyID": "GS1",
+                        "value": "4035811611014"
+                    }
+                }
+            ]
+        },
+        "documentResponse": {
+            "response": {
+                "responseCode": {
+                    "value": "OK"
+                },
+                "description": [
+                    {
+                        "value": "valid document received"
+                    }
+                ]
+            },
+            "documentReference": [
+                {
+                    "id": {
+                        "value": "TOSL-108-A"
+                    },
+                    "documentType": {
+                        "value": "Invoice"
+                    }
+                }
+            ]
+        }
+    }
+}
