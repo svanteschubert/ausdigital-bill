@@ -1,12 +1,5 @@
 {
-    "name": {
-        "namespaceURI": "urn:oasis:names:specification:ubl:schema:xsd:Invoice-2-ausdigital",
-        "localPart": "Invoice",
-        "prefix": "",
-        "key": "{urn:oasis:names:specification:ubl:schema:xsd:Invoice-2-ausdigital}Invoice",
-        "string": "{urn:oasis:names:specification:ubl:schema:xsd:Invoice-2-ausdigital}Invoice"
-    },
-    "value": {
+    "Invoice": {
         "ublVersionID": {
             "value": "2.1"
         },
@@ -22,30 +15,10 @@
             "value": "TOSL-108-A"
         },
         "issueDate": {
-            "value": {
-                "year": 2016,
-                "month": 7,
-                "day": 1,
-                "hour": null,
-                "minute": null,
-                "second": null,
-                "fractionalSecond": null,
-                "timezone": null,
-                "date": "2016-07-01T00:00:00.000Z"
-            }
+            "value": "2016-07-01"
         },
         "dueDate": {
-            "value": {
-                "year": 2016,
-                "month": 8,
-                "day": 1,
-                "hour": null,
-                "minute": null,
-                "second": null,
-                "fractionalSecond": null,
-                "timezone": null,
-                "date": "2016-08-01T00:00:00.000Z"
-            }
+            "value": "2016-08-01"
         },
         "invoiceTypeCode": {
             "listName": "Document Type Code",
@@ -189,17 +162,7 @@
         "delivery": [
             {
                 "actualDeliveryDate": {
-                    "value": {
-                        "year": 2016,
-                        "month": 3,
-                        "day": 2,
-                        "hour": null,
-                        "minute": null,
-                        "second": null,
-                        "fractionalSecond": null,
-                        "timezone": null,
-                        "date": "2016-03-02T00:00:00.000Z"
-                    }
+                    "value": "2016-03-02"
                 },
                 "deliveryAddress": {
                     "cityName": {
@@ -260,34 +223,34 @@
             {
                 "taxAmount": {
                     "currencyID": "AUD",
-                    "value": 250
+                    "value": "250.00"
                 }
             }
         ],
         "legalMonetaryTotal": {
             "lineExtensionAmount": {
                 "currencyID": "AUD",
-                "value": 3500
+                "value": "3500.00"
             },
             "taxExclusiveAmount": {
                 "currencyID": "AUD",
-                "value": 3500
+                "value": "3500.00"
             },
             "taxInclusiveAmount": {
                 "currencyID": "AUD",
-                "value": 3850
+                "value": "3850.00"
             },
             "allowanceTotalAmount": {
                 "currencyID": "AUD",
-                "value": 100
+                "value": "100.00"
             },
             "chargeTotalAmount": {
                 "currencyID": "AUD",
-                "value": 600
+                "value": "600.00"
             },
             "payableAmount": {
                 "currencyID": "AUD",
-                "value": 3850
+                "value": "3850.00"
             }
         },
         "invoiceLine": [
@@ -305,7 +268,7 @@
                 },
                 "lineExtensionAmount": {
                     "currencyID": "AUD",
-                    "value": 2500
+                    "value": "2500.00"
                 },
                 "allowanceCharge": [
                     {
@@ -319,7 +282,7 @@
                         ],
                         "amount": {
                             "currencyID": "AUD",
-                            "value": 100
+                            "value": "100.00"
                         }
                     },
                     {
@@ -333,7 +296,7 @@
                         ],
                         "amount": {
                             "currencyID": "AUD",
-                            "value": 600
+                            "value": "600.00"
                         }
                     }
                 ],
@@ -341,13 +304,13 @@
                     {
                         "taxAmount": {
                             "currencyID": "AUD",
-                            "value": 300
+                            "value": "300.00"
                         },
                         "taxSubtotal": [
                             {
                                 "taxAmount": {
                                     "currencyID": "AUD",
-                                    "value": 300
+                                    "value": "300.00"
                                 },
                                 "taxCategory": {
                                     "taxScheme": {
@@ -382,7 +345,7 @@
                 "price": {
                     "priceAmount": {
                         "currencyID": "AUD",
-                        "value": 10
+                        "value": "10.00"
                     },
                     "baseQuantity": {
                         "value": 1
@@ -403,19 +366,19 @@
                 },
                 "lineExtensionAmount": {
                     "currencyID": "AUD",
-                    "value": 500
+                    "value": "500.00"
                 },
                 "taxTotal": [
                     {
                         "taxAmount": {
                             "currencyID": "AUD",
-                            "value": 50
+                            "value": "50.00"
                         },
                         "taxSubtotal": [
                             {
                                 "taxAmount": {
                                     "currencyID": "AUD",
-                                    "value": 50
+                                    "value": "50.00"
                                 },
                                 "taxCategory": {
                                     "taxScheme": {
@@ -450,7 +413,7 @@
                 "price": {
                     "priceAmount": {
                         "currencyID": "AUD",
-                        "value": 2.5
+                        "value": "2.50"
                     },
                     "baseQuantity": {
                         "value": 1
