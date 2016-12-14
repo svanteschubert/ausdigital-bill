@@ -1,5 +1,5 @@
 {
-    "n2:Invoice": {
+    "Invoice": {
         "ublVersionID": "2.1",
         "customizationID": {
             "schemeAgencyID": "dbc",
@@ -172,7 +172,7 @@
                 "chargeIndicator": true,
                 "amount": {
                     "currencyID": "AUD",
-                    "value": "0.00"
+                    "value": "0"
                 }
             }
         ],
