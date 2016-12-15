@@ -1,8 +1,6 @@
 {
     "ApplicationResponse": {
-        "ublVersionID": {
-            "value": "2.1"
-        },
+        "ublVersionID": "2.1",
         "customizationID": {
             "schemeAgencyID": "dbc",
             "value": "urn:resources.digitalbusinesscouncil.com.au:dbc:invoicing:documents:response:xsd::response 1##urn:resources.digitalbusinesscouncil.com.au:dbc:einvoicing:process:einvoicing04:ver1.0"
@@ -11,15 +9,9 @@
             "schemeAgencyID": "dbc",
             "value": "urn:resources.digitalbusinesscouncil.com.au:dbc:einvoicing:ver1.0"
         },
-        "id": {
-            "value": "RESP-0201991"
-        },
-        "issueDate": {
-            "value": "2016-05-01"
-        },
-        "issueTime": {
-            "value": "09:30:47+05:00"
-        },
+        "id": "RESP-0201991",
+        "issueDate": "2016-05-01",
+        "issueTime": "09:30:47+05:00",
         "senderParty": {
             "partyIdentification": [
                 {
@@ -41,27 +33,21 @@
                 }
             ]
         },
-        "documentResponse": {
-            "response": {
-                "responseCode": {
-                    "value": "OK"
+        "documentResponse": [
+            {
+                "response": {
+                    "responseCode": "OK",
+                    "description": [
+                        "valid document received"
+                    ]
                 },
-                "description": [
+                "documentReference": [
                     {
-                        "value": "valid document received"
+                        "id": "TOSL-108-A",
+                        "documentType": "Invoice"
                     }
                 ]
-            },
-            "documentReference": [
-                {
-                    "id": {
-                        "value": "TOSL-108-A"
-                    },
-                    "documentType": {
-                        "value": "Invoice"
-                    }
-                }
-            ]
-        }
+            }
+        ]
     }
 }

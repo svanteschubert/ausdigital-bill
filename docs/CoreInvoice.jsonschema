@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "urn:oasis:names:specification:ubl:schema:xsd:Invoice-2-ausdigital#",
+  "id": "urn:oasis:names:specification:ubl:schema:xsd:Invoice-2#",
   "type": "object",
   "properties": {
     "Invoice": {
