@@ -1,9 +1,9 @@
 {
   "swagger" : "2.0",
   "info" : {
-    "description" : "APIs for validation of the various billing documents (invoice, credit note, etc)",
+    "description" : "APIs for validation of the various billing documents (invoice, credit note, ..)",
     "version" : "1.0",
-    "title" : "Billing document validation API."
+    "title" : "Billing document validation API"
   },
   "host" : "api.e-invoice.com",
   "basePath" : "/validator",
