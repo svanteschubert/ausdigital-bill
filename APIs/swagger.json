@@ -34,7 +34,9 @@
           }
         }
       }
-    },
+    }
+  },
+  "definitions" : {
     "Invoice" : {
       "title" : "NewInvoice",
       "required" : [ "IssueDate", "DueDate", "InvoiceTypeCode", "BuyerReference", "OrderReference", "AccountingSupplierParty", "AccountingCustomerParty" ],
@@ -323,41 +325,6 @@
       "properties" : {
         "Name" : {
           "type" : "string"
-        }
-      }
-    },
-    "DocumentResponse" : {
-      "title" : "Document Response",
-      "required" : [ "DocumentReference", "Response" ],
-      "properties" : {
-        "DocumentReference" : {
-          "title" : "Document Reference",
-          "type" : "object",
-          "required" : [ "ID", "IssueDate", "DocumentTypeCode" ],
-          "properties" : {
-            "ID" : {
-              "type" : "string"
-            },
-            "IssueDate" : {
-              "type" : "string"
-            },
-            "DocumentTypeCode" : {
-              "type" : "string"
-            }
-          }
-        },
-        "Response" : {
-          "title" : "Response Data",
-          "type" : "object",
-          "required" : [ "ResponseCode", "Description" ],
-          "properties" : {
-            "ResponseCode" : {
-              "type" : "string"
-            },
-            "Description" : {
-              "type" : "string"
-            }
-          }
         }
       }
     },
