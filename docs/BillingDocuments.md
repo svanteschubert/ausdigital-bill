@@ -1,4 +1,0 @@
-# Billing Document Specifications
-
-
-
