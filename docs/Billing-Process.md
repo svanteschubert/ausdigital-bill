@@ -29,7 +29,7 @@ The diagram shows the allowed set of states for an invoice as understood by both
 ![Billing State Lifecycle](Billing-StateLifecycle.png)
 
 * The TaxReceipt has the simplest lifecycle because it is just a record of a previous payment and so there is only a single invoice (profileID=taxreceipt) sent from seller to buyer and the state is "paid".  No document response needed.
-* The receipt of an invoice (profileID=rcti) by a seller from a buyer takes the state directly to "approved" because this is a payer initiated transaction.  However the payer may subsequently send an invoice (profileID=debitnote) to make an adjustment to the rcti prior to eventual payment is accordance with payment terms.
+* The receipt of an RCTI (profileID=rcti) by a seller from a buyer takes the state directly to "approved" because this is a payer initiated transaction.  However the payer may subsequently send an invoice (profileID=debitnote) to make an adjustment to the rcti prior to eventual payment is accordance with payment terms.
 * The standard inovice that is a demand for future payment from seller to buyer is the most complex lifecycle becuase there can be 
   * various response documents indicating buyer processing status (acknowledged, approved, disputed, rejected)
   * a re-issue of the invoice with changes (profileID = adjustment) from seller to buyer - usually in response to a disputed status.
