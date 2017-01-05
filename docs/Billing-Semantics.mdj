@@ -18634,14 +18634,15 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 450.5,
+											"left": 436.5,
 											"top": 76,
-											"width": 0,
+											"width": 28,
 											"height": 13,
 											"autoResize": false,
 											"alpha": 2.356194490192345,
 											"distance": 20,
 											"underline": false,
+											"text": "Start",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -19784,9 +19785,9 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 247,
+											"left": 244,
 											"top": 288,
-											"width": 118,
+											"width": 125,
 											"height": 13,
 											"autoResize": false,
 											"alpha": 1.7415313957654603,
@@ -19796,7 +19797,7 @@
 											},
 											"edgePosition": 1,
 											"underline": false,
-											"text": "Response [Approve]",
+											"text": "Response [Approved]",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -19928,19 +19929,19 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 469,
-											"top": 336,
-											"width": 114,
+											"left": 472,
+											"top": 328,
+											"width": 121,
 											"height": 13,
 											"autoResize": false,
-											"alpha": 1.777479235106656,
-											"distance": 63.34824385884742,
+											"alpha": 1.8703279966260407,
+											"distance": 71.16881339463234,
 											"hostEdge": {
 												"$ref": "AAAAAAFWOsLXj8JYhdk="
 											},
 											"edgePosition": 1,
 											"underline": false,
-											"text": "Response [Dispute]",
+											"text": "Response [Disputed]",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -20340,7 +20341,7 @@
 											},
 											"edgePosition": 1,
 											"underline": false,
-											"text": "Response [Reject]",
+											"text": "Response [Rejected]",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -20472,9 +20473,9 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 292,
+											"left": 289,
 											"top": 432,
-											"width": 118,
+											"width": 125,
 											"height": 13,
 											"autoResize": false,
 											"alpha": 1.5730810726165398,
@@ -20484,7 +20485,7 @@
 											},
 											"edgePosition": 1,
 											"underline": false,
-											"text": "Response [Approve]",
+											"text": "Response [Approved]",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -20616,19 +20617,19 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 535,
-											"top": 390,
-											"width": 107,
+											"left": 520,
+											"top": 389,
+											"width": 121,
 											"height": 13,
 											"autoResize": false,
-											"alpha": 1.5707963267948966,
-											"distance": 15,
+											"alpha": -4.222432173162247,
+											"distance": 17,
 											"hostEdge": {
 												"$ref": "AAAAAAFWOsWWB8LIlXg="
 											},
 											"edgePosition": 1,
 											"underline": false,
-											"text": "Response [Reject]",
+											"text": "Response [Rejected]",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -21494,9 +21495,9 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 312,
+											"left": 308,
 											"top": 231,
-											"width": 147,
+											"width": 154,
 											"height": 13,
 											"autoResize": false,
 											"alpha": -1.7338919964288082,
@@ -21506,7 +21507,7 @@
 											},
 											"edgePosition": 1,
 											"underline": false,
-											"text": "Response [Acknowledge]",
+											"text": "Response [Acknowledged]",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -22182,9 +22183,9 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 269,
+											"left": 266,
 											"top": 535,
-											"width": 118,
+											"width": 125,
 											"height": 13,
 											"autoResize": false,
 											"alpha": -1.70743934083846,
@@ -22194,7 +22195,7 @@
 											},
 											"edgePosition": 1,
 											"underline": false,
-											"text": "Response [Approve]",
+											"text": "Response [Approved]",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -22326,9 +22327,9 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 319,
+											"left": 316,
 											"top": 472,
-											"width": 114,
+											"width": 121,
 											"height": 13,
 											"autoResize": false,
 											"alpha": -3.8376558100680658,
@@ -22338,7 +22339,7 @@
 											},
 											"edgePosition": 1,
 											"underline": false,
-											"text": "Response [Dispute]",
+											"text": "Response [Disputed]",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -22470,9 +22471,9 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 528,
+											"left": 521,
 											"top": 539,
-											"width": 107,
+											"width": 121,
 											"height": 13,
 											"autoResize": false,
 											"alpha": -4.582286773666095,
@@ -22482,7 +22483,7 @@
 											},
 											"edgePosition": 1,
 											"underline": false,
-											"text": "Response [Reject]",
+											"text": "Response [Rejected]",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -23190,9 +23191,9 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 295,
+											"left": 292,
 											"top": 376,
-											"width": 114,
+											"width": 121,
 											"height": 13,
 											"autoResize": false,
 											"alpha": 1.7436559066871802,
@@ -23202,7 +23203,7 @@
 											},
 											"edgePosition": 1,
 											"underline": false,
-											"text": "Response [Dispute]",
+											"text": "Response [Disputed]",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -23614,6 +23615,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFWOruHQME5oHA="
 									},
+									"name": "Start",
 									"visibility": "public",
 									"kind": "initial"
 								},
@@ -23712,7 +23714,7 @@
 									},
 									"visibility": "public",
 									"kind": "external",
-									"guard": "Approve",
+									"guard": "Approved",
 									"triggers": [
 										{
 											"_type": "UMLEvent",
@@ -23740,7 +23742,7 @@
 									},
 									"visibility": "public",
 									"kind": "external",
-									"guard": "Dispute",
+									"guard": "Disputed",
 									"triggers": [
 										{
 											"_type": "UMLEvent",
@@ -23768,7 +23770,7 @@
 									},
 									"visibility": "public",
 									"kind": "external",
-									"guard": "Reject",
+									"guard": "Rejected",
 									"triggers": [
 										{
 											"_type": "UMLEvent",
@@ -23796,7 +23798,7 @@
 									},
 									"visibility": "public",
 									"kind": "external",
-									"guard": "Approve",
+									"guard": "Approved",
 									"triggers": [
 										{
 											"_type": "UMLEvent",
@@ -23824,7 +23826,7 @@
 									},
 									"visibility": "public",
 									"kind": "external",
-									"guard": "Reject",
+									"guard": "Rejected",
 									"triggers": [
 										{
 											"_type": "UMLEvent",
@@ -23909,7 +23911,7 @@
 									},
 									"visibility": "public",
 									"kind": "external",
-									"guard": "Acknowledge",
+									"guard": "Acknowledged",
 									"triggers": [
 										{
 											"_type": "UMLEvent",
@@ -23993,7 +23995,7 @@
 									},
 									"visibility": "public",
 									"kind": "external",
-									"guard": "Approve",
+									"guard": "Approved",
 									"triggers": [
 										{
 											"_type": "UMLEvent",
@@ -24021,7 +24023,7 @@
 									},
 									"visibility": "public",
 									"kind": "external",
-									"guard": "Dispute",
+									"guard": "Disputed",
 									"triggers": [
 										{
 											"_type": "UMLEvent",
@@ -24049,7 +24051,7 @@
 									},
 									"visibility": "public",
 									"kind": "external",
-									"guard": "Reject",
+									"guard": "Rejected",
 									"triggers": [
 										{
 											"_type": "UMLEvent",
@@ -24189,7 +24191,7 @@
 									},
 									"visibility": "public",
 									"kind": "external",
-									"guard": "Dispute",
+									"guard": "Disputed",
 									"triggers": [
 										{
 											"_type": "UMLEvent",
