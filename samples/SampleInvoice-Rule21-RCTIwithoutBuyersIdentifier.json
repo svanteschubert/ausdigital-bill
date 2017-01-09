@@ -12,11 +12,7 @@
         "id": "TOSL-108-A",
         "issueDate": "2016-07-01",
         "dueDate": "2016-08-01",
-        "invoiceTypeCode": {
-            "listName": "Document Type Code",
-            "listAgencyID": "6",
-            "value": "389"
-        },
+        "invoiceTypeCode": "389",
         "note": [
             "Recipient Created Tax Invoice"
         ],
@@ -26,18 +22,12 @@
             "value": "AUD"
         },
         "buyerReference": "CC-3352626",
-        "orderReference": {
-            "id": "SB002"
-        },
+        "orderReference": "SB002",
         "accountingSupplierParty": {
             "party": {
                 "partyIdentification": [
                     {
-                        "id": {
-                            "schemeID": "urn:oasis:names:tc:ebcore:partyid-type:iso6523:088",
-                            "schemeAgencyID": "GS1",
-                            "value": "4035811611014"
-                        }
+                        "GLN": "4035811611014"
                     }
                 ],
                 "partyName": [
@@ -54,19 +44,12 @@
                             "line": "88 Grenfell St"
                         }
                     ],
-                    "country": {
-                        "identificationCode": {
-                            "listName": "Country Identification Code",
-                            "listAgencyID": "5",
-                            "value": "AU"
-                        }
-                    }
+                    "country": "AU"
                 },
                 "partyLegalEntity": [
                     {
                         "companyID": {
-                            "schemeID": "urn:oasis:names:tc:ebcore:partyid-type:iso6523:0151",
-                            "value": "987654321"
+                            "ABN": "987654321"
                         }
                     }
                 ]
@@ -76,10 +59,7 @@
             "party": {
                 "partyIdentification": [
                     {
-                        "id": {
-                            "schemeID": "urn:oasis:names:tc:ebcore:partyid-type:iso6523:0151",
-                            "value": "51083392303"
-                        }
+                        "ABN": "51083392303"
                     }
                 ],
                 "postalAddress": {
@@ -91,13 +71,7 @@
                             "line": "Delabole Road"
                         }
                     ],
-                    "country": {
-                        "identificationCode": {
-                            "listName": "Country Identification Code",
-                            "listAgencyID": "5",
-                            "value": "AU"
-                        }
-                    }
+                    "country": "AU"
                 }
             },
             "buyerContact": {
@@ -118,23 +92,14 @@
                             "line": "202 North Terrace"
                         }
                     ],
-                    "country": {
-                        "identificationCode": {
-                            "listName": "Country Identification Code",
-                            "listAgencyID": "5",
-                            "value": "AU"
-                        }
-                    }
+                    "country": "AU"
                 }
             }
         ],
         "paymentMeans": [
             {
                 "id": "EFT",
-                "paymentMeansCode": {
-                    "listID": "UN/ECE 4461",
-                    "value": "2"
-                },
+                "paymentMeansCode": "2",
                 "instructionID": "888276612262653",
                 "payeeFinancialAccount": {
                     "id": "2000987211",
@@ -150,29 +115,14 @@
         ],
         "taxTotal": [
             {
-                "taxAmount": {
-                    "currencyID": "AUD",
-                    "value": "250.00"
-                }
+                "taxAmount": "250.00"
             }
         ],
         "legalMonetaryTotal": {
-            "lineExtensionAmount": {
-                "currencyID": "AUD",
-                "value": "2500.00"
-            },
-            "taxExclusiveAmount": {
-                "currencyID": "AUD",
-                "value": "2500.00"
-            },
-            "taxInclusiveAmount": {
-                "currencyID": "AUD",
-                "value": "2750.00"
-            },
-            "payableAmount": {
-                "currencyID": "AUD",
-                "value": "2750.00"
-            }
+            "lineExtensionAmount": "2500.00",
+            "taxExclusiveAmount": "2500.00",
+            "taxInclusiveAmount": "2750.00",
+            "payableAmount": "2750.00"
         },
         "invoiceLine": [
             {
@@ -181,26 +131,15 @@
                     "A variety of Widgets"
                 ],
                 "invoicedQuantity": 200,
-                "lineExtensionAmount": {
-                    "currencyID": "AUD",
-                    "value": "2000.00"
-                },
+                "lineExtensionAmount": "2000.00",
                 "taxTotal": [
                     {
-                        "taxAmount": {
-                            "currencyID": "AUD",
-                            "value": "200.00"
-                        },
+                        "taxAmount": "200.00",
                         "taxSubtotal": [
                             {
-                                "taxAmount": {
-                                    "currencyID": "AUD",
-                                    "value": "10.00"
-                                },
+                                "taxAmount": "10.00",
                                 "taxCategory": {
-                                    "taxScheme": {
-                                        "id": "GST"
-                                    }
+                                    "taxScheme": "GST"
                                 }
                             }
                         ]
@@ -210,22 +149,13 @@
                     "description": [
                         "Widget"
                     ],
-                    "sellersItemIdentification": {
-                        "id": "WDGT-A1733-0436"
-                    },
+                    "sellersItemIdentification": "WDGT-A1733-0436",
                     "standardItemIdentification": {
-                        "id": {
-                            "schemeID": "GTIN",
-                            "schemeAgencyID": "GS1",
-                            "value": "9501101021037"
-                        }
+                        "GTIN": "9501101021037"
                     }
                 },
                 "price": {
-                    "priceAmount": {
-                        "currencyID": "AUD",
-                        "value": "10.00"
-                    },
+                    "priceAmount": "10.00",
                     "baseQuantity": 1
                 }
             },
@@ -235,26 +165,15 @@
                     "Widget attachments"
                 ],
                 "invoicedQuantity": 200,
-                "lineExtensionAmount": {
-                    "currencyID": "AUD",
-                    "value": "500.00"
-                },
+                "lineExtensionAmount": "500.00",
                 "taxTotal": [
                     {
-                        "taxAmount": {
-                            "currencyID": "AUD",
-                            "value": "50.00"
-                        },
+                        "taxAmount": "50.00",
                         "taxSubtotal": [
                             {
-                                "taxAmount": {
-                                    "currencyID": "AUD",
-                                    "value": "10.00"
-                                },
+                                "taxAmount": "10.00",
                                 "taxCategory": {
-                                    "taxScheme": {
-                                        "id": "GST"
-                                    }
+                                    "taxScheme": "GST"
                                 }
                             }
                         ]
@@ -264,22 +183,13 @@
                     "description": [
                         "Widget screws"
                     ],
-                    "sellersItemIdentification": {
-                        "id": "WDGT-A1733-0437"
-                    },
+                    "sellersItemIdentification": "WDGT-A1733-0437",
                     "standardItemIdentification": {
-                        "id": {
-                            "schemeID": "GTIN",
-                            "schemeAgencyID": "GS1",
-                            "value": "9501101021038"
-                        }
+                        "GTIN": "9501101021038"
                     }
                 },
                 "price": {
-                    "priceAmount": {
-                        "currencyID": "AUD",
-                        "value": "2.50"
-                    },
+                    "priceAmount": "2.50",
                     "baseQuantity": 1
                 }
             }
