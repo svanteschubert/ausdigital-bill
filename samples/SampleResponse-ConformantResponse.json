@@ -15,21 +15,14 @@
         "senderParty": {
             "partyIdentification": [
                 {
-                    "id": {
-                        "schemeID": "urn:oasis:names:tc:ebcore:partyid-type:iso6523:0151",
-                        "value": "51083392303"
-                    }
+                    "ABN": "51083392303"
                 }
             ]
         },
         "receiverParty": {
             "partyIdentification": [
                 {
-                    "id": {
-                        "schemeID": "urn:oasis:names:tc:ebcore:partyid-type:iso6523:088",
-                        "schemeAgencyID": "GS1",
-                        "value": "4035811611014"
-                    }
+                    "GLN": "4035811611014"
                 }
             ]
         },
