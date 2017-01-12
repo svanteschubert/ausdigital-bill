@@ -9,6 +9,7 @@
       "required": ["response", "documentReference"],
       "properties": {
         "response": {
+          "description": "A response to the document as a whole.",
           "$ref": "#/definitions/ResponseType"
         },
         "documentReference": {
@@ -50,7 +51,21 @@
           "type": "string"
         },
         "documentReference": {
+          "description": "A reference to the document containing the referenced line.",
           "$ref": "#/definitions/DocumentReferenceType"
+        }
+      }
+    },
+    "PartyIDType": {
+      "type": "object",
+      "properties": {
+        "GLN": {
+          "description": "GLN.",
+          "type": "string"
+        },
+        "ABN": {
+          "description": "ABN.",
+          "type": "string"
         }
       }
     },
@@ -81,7 +96,7 @@
           "type": "string"
         },
         "value": {
-          "title": "value",
+          "description": "The value of the identifier",
           "type": "string"
         },
         "schemeVersionID": {
@@ -134,6 +149,7 @@
           }
         },
         "lineReference": {
+          "description": "A reference to the line being responded to.",
           "$ref": "#/definitions/LineReferenceType"
         }
       }
@@ -231,9 +247,11 @@
       "required": ["id", "issueDate", "issueTime", "senderParty", "receiverParty", "documentResponse"],
       "properties": {
         "customizationID": {
-          "$ref": "#/definitions/IdentifierType"
+          "description": "Identifies a user-defined customization of UBL for a specific use. Identifies the specification of content and rules that apply to the transaction. Identifying the customisation/implementation guide/contextualization of the syntax message and its extension that applies to the invoice transaction, enables the receiver to apply the correct validation to the received document as well as to route the document to an appropriate service for processing.",
+          "type": "string"
         },
         "ublExtensions": {
+          "description": "A container for all extensions present in the document.",
           "$ref": "#/definitions/UBLExtensionsType"
         },
         "issueTime": {
@@ -242,9 +260,11 @@
           "type": "string"
         },
         "profileID": {
-          "$ref": "#/definitions/IdentifierType"
+          "description": "Identifies a user-defined profile of the customization of UBL being used. Identifies the DBC profile or business process context in which the transaction appears.",
+          "type": "string"
         },
         "senderParty": {
+          "description": "The date, assigned by the sender, on which this document was issued. The date on which the Invoice was created.",
           "$ref": "#/definitions/PartyType"
         },
         "ublVersionID": {
@@ -273,6 +293,7 @@
           "type": "string"
         },
         "receiverParty": {
+          "description": "The date, assigned by the sender, on which this document was issued. The date on which the Invoice was created.",
           "$ref": "#/definitions/PartyType"
         }
       }
@@ -298,7 +319,7 @@
           "description": "An identifier for this party.",
           "type": "array",
           "items": {
-            "$ref": "#/definitions/IdentifierType"
+            "$ref": "#/definitions/PartyIDType"
           }
         }
       }
