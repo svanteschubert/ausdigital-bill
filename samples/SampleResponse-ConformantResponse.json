@@ -1,14 +1,8 @@
 {
     "ApplicationResponse": {
         "ublVersionID": "2.1",
-        "customizationID": {
-            "schemeAgencyID": "dbc",
-            "value": "urn:resources.digitalbusinesscouncil.com.au:dbc:invoicing:documents:response:xsd::response 1##urn:resources.digitalbusinesscouncil.com.au:dbc:einvoicing:process:einvoicing04:ver1.0"
-        },
-        "profileID": {
-            "schemeAgencyID": "dbc",
-            "value": "urn:resources.digitalbusinesscouncil.com.au:dbc:einvoicing:ver1.0"
-        },
+        "customizationID": "urn:resources.digitalbusinesscouncil.com.au:dbc:invoicing:documents:response:xsd::response 1##urn:resources.digitalbusinesscouncil.com.au:dbc:einvoicing:process:einvoicing04:ver1.0",
+        "profileID": "urn:resources.digitalbusinesscouncil.com.au:dbc:einvoicing:ver1.0",
         "id": "RESP-0201991",
         "issueDate": "2016-05-01",
         "issueTime": "09:30:47+05:00",
