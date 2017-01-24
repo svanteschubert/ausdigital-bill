@@ -41,7 +41,9 @@
                 },
                 "partyLegalEntity": [
                     {
-                        "companyID": {}
+                        "companyID": {
+                            "ABN": "987654321"
+                        }
                     }
                 ]
             }
@@ -71,7 +73,9 @@
                 },
                 "partyLegalEntity": [
                     {
-                        "companyID": {}
+                        "companyID": {
+                            "ABN": "51083392303"
+                        }
                     }
                 ]
             },
@@ -105,8 +109,10 @@
                 "payeeFinancialAccount": {
                     "id": "2000987211",
                     "financialInstitutionBranch": {
-                        "name": "NAB Adelaide",
-                        "BSB": "086016"
+                        "id": {
+                            "BSB": "086016"
+                        },
+                        "name": "NAB Adelaide"
                     }
                 }
             }
