@@ -1,12 +1,12 @@
-# Billing Document Specifications
+# UBL JSONBilling Document Specifications
 
 The billing process is supported by the invoice document (six variants) and the response document (four status codes) as described in the [billing process](Billing-Process.md) model.  This page specifies the required invoice and response document models.
 
 ## Invoice Document
 
-Is defined by the [Invoice Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/spec/v1.0.0/Invoice.json) which is a simple single root JSON Schema that is a semantically equivalent representation of the DBC [CoreInvoice XML Schema](https://github.com/ausdigital/dbc-specs/blob/master/DBC-AU/xsd/maindoc/CoreInvoice-1.0.xsd) library.
+Is defined by the [Invoice Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/ubl-json/spec/v1.0.0/Invoice.json) which is a simple single root JSON Schema that is a semantically equivalent representation of the DBC [CoreInvoice XML Schema](https://github.com/ausdigital/dbc-specs/blob/master/DBC-AU/xsd/maindoc/CoreInvoice-1.0.xsd) library.
 
-* **[Browsable Invoice Schema](http://ausdigital.org/docson.html#https://raw.githubusercontent.com/ausdigital/ausdigital-bill/master/spec/v1.0.0/Invoice.json)**
+* **[Browsable Invoice Schema](http://ausdigital.org/docson.html#https://raw.githubusercontent.com/ausdigital/ausdigital-bill/master/ubl-json/spec/v1.0.0/Invoice.json)**
 * **[Invoice Samples](https://github.com/ausdigital/ausdigital-bill/tree/master/samples)**
 
 ## Response Document
