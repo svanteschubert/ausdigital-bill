@@ -10,7 +10,7 @@ Is defined by the DBC [CoreInvoice XML Schema](https://github.com/ausdigital/aus
 
 ## Response Document
 
-Is defined by the DBC [Document Response XML Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/ubl-xml/spec/v1.0.0/Response.xsd) library.
+Is defined by the DBC [Document Response XML Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/ubl-xml/spec/v1.0.0/maindoc/Response.xsd) library.
 
 * **[Response Sample](https://github.com/ausdigital/ausdigital-bill/tree/master/ubl-xml/samples/Response/SampleResponse-ConformantResponse.xml)**
 
