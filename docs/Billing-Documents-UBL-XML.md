@@ -4,13 +4,13 @@ The billing process is supported by the invoice document (six variants) and the 
 
 ## Invoice Document
 
-Is defined by the DBC [CoreInvoice XML Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/ubl-json/spec/v1.0.0/maindoc/CoreInvoice-1.0.xsd) library.
+Is defined by the DBC [CoreInvoice XML Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/ubl-xml/spec/v1.0.0/maindoc/CoreInvoice-1.0.xsd) library.
 
 * **[Invoice Samples](https://github.com/ausdigital/ausdigital-bill/tree/master/ubl-xml/samples/Invoice/)**
 
 ## Response Document
 
-Is defined by the DBC [Document Response XML Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/spec/v1.0.0/Response.xsd) library.
+Is defined by the DBC [Document Response XML Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/ubl-xml/spec/v1.0.0/Response.xsd) library.
 
 * **[Response Sample](https://github.com/ausdigital/ausdigital-bill/tree/master/ubl-xml/samples/Response/SampleResponse-ConformantResponse.xml)**
 
