@@ -4,15 +4,15 @@ The billing process is supported by the invoice document (six variants) and the 
 
 ## Invoice Document
 
-Is defined by the DBC [CoreInvoice XML Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/ubl-xml/spec/v1.0.0/maindoc/CoreInvoice-1.0.xsd) library.
+Is defined by the DBC [CoreInvoice XML Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/syn-v1/spec/v1.0.0/maindoc/CoreInvoice-1.0.xsd) library.
 
-* **[Invoice Samples](https://github.com/ausdigital/ausdigital-bill/tree/master/ubl-xml/samples/Invoice/)**
+* **[Invoice Samples](https://github.com/ausdigital/ausdigital-bill/tree/master/syn-v1/samples/Invoice/)**
 
 ## Response Document
 
-Is defined by the DBC [Document Response XML Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/ubl-xml/spec/v1.0.0/maindoc/Response-1.0.xsd) library.
+Is defined by the DBC [Document Response XML Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/syn-v1/spec/v1.0.0/maindoc/Response-1.0.xsd) library.
 
-* **[Response Sample](https://github.com/ausdigital/ausdigital-bill/tree/master/ubl-xml/samples/Response/SampleResponse-ConformantResponse.xml)**
+* **[Response Sample](https://github.com/ausdigital/ausdigital-bill/tree/master/syn-v1/samples/Response/SampleResponse-ConformantResponse.xml)**
 
 The response document is a generic structure for all UBL document responses.  The generic response becomes a meaningful invoice response via the correct population of two key fields:
 * "profileID" which MUST be one of the 6 invoice profiles define in the [billing process](Billing-Process.md#invoice-document-profiles)
@@ -20,4 +20,4 @@ The response document is a generic structure for all UBL document responses.  Th
 
 # Validation Rules
 
-Validation rules are listed in the [DBC e-invoice semantic model](https://github.com/ausdigital/dbc-specs/blob/master/eInvoicing_Semantic_Model_v1.0.pdf).  
+Validation rules are listed in the [DBC e-invoice semantic model](https://github.com/ausdigital/ausdigital-bill/blob/master/docs/eInvoicing_Semantic_Model_v1.0.pdf).  
