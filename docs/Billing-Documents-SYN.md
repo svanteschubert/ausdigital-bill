@@ -1,4 +1,4 @@
-# UBL JSONBilling Document Specifications
+# UBL Syntax 2.0 Billing Document Specifications
 
 The billing process is supported by the invoice document (six variants) and the response document (four status codes) as described in the [billing process](Billing-Process.md) model.  This page specifies the required invoice and response document models.
 
