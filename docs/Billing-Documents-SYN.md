@@ -11,7 +11,7 @@ Is defined by the [Invoice Schema](https://github.com/ausdigital/ausdigital-bill
 
 ## Response Document
 
-Is defined by the [Response Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/spec/v1.0.0/Response.json) which is a simple single root JSON Schema that is a semantically equivalent representation of the DBC [Document Response XML Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/syn-v1/spec/v1.0.0/maindoc/Response-1.0.xsd) library.
+Is defined by the [Response Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/syn/spec/v1.0.0/Response.json) which is a simple single root JSON Schema that is a semantically equivalent representation of the DBC [Document Response XML Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/syn-v1/spec/v1.0.0/maindoc/Response-1.0.xsd) library.
 
 * **[Browsable Response Schema](http://ausdigital.org/docson.html#https://raw.githubusercontent.com/ausdigital/ausdigital-bill/master/syn/spec/v1.0.0/Response.json)**
 * **[Response Sample](https://github.com/ausdigital/ausdigital-bill/blob/master/syn/samples/Response/SampleResponse-ConformantResponse.json)**
