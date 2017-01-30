@@ -17,6 +17,7 @@ Is defined by the [Response Schema](https://github.com/ausdigital/ausdigital-bil
 * **[Response Sample](https://github.com/ausdigital/ausdigital-bill/blob/master/syn/samples/Response/SampleResponse-ConformantResponse.json)**
 
 The response document is a generic structure for all UBL document responses.  The generic response becomes a meaningful invoice response via the correct population of two key fields:
+
 * "profileID" which MUST be one of the 6 invoice profiles define in the [billing process](Billing-Process.md#invoice-document-profiles)
 * "statusReasonCode" which MUST contain one of the 4 values defined in the [invoice response codes](Billing-Process.md#document-response-codes)
 
