@@ -182,7 +182,7 @@
  | A Recipient Created Tax Invoice MAY contain the following statement: “The recipient and the supplier declare that this agreement applies to supplies to which this tax invoice relates. The recipient can issue tax invoices in respect of these supplies. The supplier will not issue tax invoices in respect of these supplies. The supplier acknowledges that it is registered for GST and that it will notify the recipient if it ceases to be registered. The recipient acknowledges that it is registered for GST and that it will notify the supplier if it ceases to be registered for GST. Acceptance of this RCTI constitutes acceptance of the terms of this written agreement. Both parties to this supply agree that they are parties to an RCTI agreement. The supplier agrees to notify the recipient if the supplier does not wish to accept the proposed agreement within 21 days of receiving this document.” | | X | |
   
 ### Validation Rules - "ProfileID":"taxreceipt"
-  tbd
+ tbd
   
 ### Validation Rules - "ProfileID":"adjustment"
  | Rule | Mandatory | Optional | Extension |
@@ -200,6 +200,6 @@
  | The Credit Note Line Net Price MUST NOT be negative. | X | | |
  | A Payment Means Type Code for a Credit MUST have a Financial Institution Account Identifier. | X | | |
   
-  ## Validation Rules - "ProfileID":"debitnote"
-  tbd
+### Validation Rules - "ProfileID":"debitnote"
+ tbd
   
