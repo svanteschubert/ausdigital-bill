@@ -3,7 +3,7 @@
  * Editor: Steve Capell
  * Contributors: 
 
- ## Invoice Document Profiles
+## Invoice Document Profiles
 
  The Invoice document is used in six different process contexts, indicated using the UBL ProfileID.
 
@@ -16,7 +16,7 @@
 
  The detailed business vlaidation rules for each invoice profile are defined in the billing rules specification.
 
- ## Document Response Codes
+## Document Response Codes
 
  A UBL document response provides a means for the receiver party to update the sender on the processing state of the invoice.  The set of valid document response codes depends on the business process identified by the ProcessID (which is the same as the customizationID in UBL instances) are
 
@@ -25,7 +25,7 @@
  * Disputed - means that the payer has not accepted the inovice and will dispute some or all of the invoice.
  * Rejected - means that the payer has rejected the entire invoice and will not be paying.  
 
- ## State Lifecycle
+## State Lifecycle
 
  The diagram shows the allowed set of states for an invoice as understood by both parties in the collaborative process.  Every transition from one state to another is triggered by the echange of a business message - which could be either an invoice (one of six profiles) or a response document (with one of four response codes).
 
@@ -44,13 +44,13 @@
 
  The billing process is supported by the invoice document (six variants) and the response document (four status codes) as described in the [billing process](Billing-Process.md) model.  This page specifies the required invoice and response document models.
 
- ## Invoice Document
+## Invoice Document
 
  Is defined by the DBC [CoreInvoice XML Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/syn-v1/spec/v1.0.0/maindoc/CoreInvoice-1.0.xsd) library.
 
  * **[Invoice Samples](https://github.com/ausdigital/ausdigital-bill/tree/master/syn-v1/samples/Invoice/)**
 
- ## Response Document
+## Response Document
 
  Is defined by the DBC [Document Response XML Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/syn-v1/spec/v1.0.0/maindoc/Response-1.0.xsd) library.
 
@@ -64,14 +64,14 @@
 
  The billing process is supported by the invoice document (six variants) and the response document (four status codes) as described in the [billing process](Billing-Process.md) model.  This page specifies the required invoice and response document models.
 
- ## Invoice Document
+## Invoice Document
 
  Is defined by the [Invoice Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/syn/spec/v1.0.0/Invoice.json) which is a simple single root JSON Schema that is a semantically equivalent representation of the DBC [CoreInvoice XML Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/syn-v1/spec/v1.0.0/maindoc/CoreInvoice-1.0.xsd) library.
 
  * **[Browsable Invoice Schema](http://ausdigital.org/docson.html#https://raw.githubusercontent.com/ausdigital/ausdigital-bill/master/syn/spec/v1.0.0/Invoice.json)**
  * **[Invoice Samples](https://github.com/ausdigital/ausdigital-bill/tree/master/syn/samples/Invoice/)**
 
- ## Response Document
+## Response Document
 
  Is defined by the [Response Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/syn/spec/v1.0.0/Response.json) which is a simple single root JSON Schema that is a semantically equivalent representation of the DBC [Document Response XML Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/syn-v1/spec/v1.0.0/maindoc/Response-1.0.xsd) library.
 
@@ -87,7 +87,7 @@
 
  Validation rules from the [DBC e-invoice semantic model](https://github.com/ausdigital/ausdigital-bill/blob/master/docs/eInvoicing_Semantic_Model_v1.0.pdf) are re-stated here but are broken down according to the invoice document usage context as identified by the ProfielID element.  
 
- ## Validation Rules - Common
+## Validation Rules - Common
 | Rule | Mandatory | Optional | Extension |
 |------|-----------|----------| ----------|
   | An Invoice of more than $82.50 (including GST) to a GST-registered Buyer MUST be a Tax Invoice. | X | | |
