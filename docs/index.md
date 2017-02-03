@@ -40,7 +40,7 @@
   - an outright rejection of the invoice by the buyer which leads to a cancelled end-state.
  * The "success" end state in all cases is "paid" - indicated by the receipt of a payment record from a bank reconcilation file (outside of the scope of this specificaiton).
 
- # UBL Syntax 1.0 Billing Document Specifications
+# UBL Syntax 1.0 Billing Document Specifications
 
  The billing process is supported by the invoice document (six variants) and the response document (four status codes) as described in the [billing process](Billing-Process.md) model.  This page specifies the required invoice and response document models.
 
@@ -60,7 +60,7 @@
  * "profileID" which MUST be one of the 6 invoice profiles define in the [billing process](Billing-Process.md#invoice-document-profiles)
  * "statusReasonCode" which MUST contain one of the 4 values defined in the [invoice response codes](Billing-Process.md#document-response-codes) 
  
- # UBL Syntax 2.0 Billing Document Specifications
+# UBL Syntax 2.0 Billing Document Specifications
 
  The billing process is supported by the invoice document (six variants) and the response document (four status codes) as described in the [billing process](Billing-Process.md) model.  This page specifies the required invoice and response document models.
 
@@ -83,7 +83,7 @@
  * "profileID" which MUST be one of the 6 invoice profiles define in the [billing process](Billing-Process.md#invoice-document-profiles)
  * "statusReasonCode" which MUST contain one of the 4 values defined in the [invoice response codes](Billing-Process.md#document-response-codes)
 
- # Validation Rules
+# Validation Rules
 
  Validation rules from the [DBC e-invoice semantic model](https://github.com/ausdigital/ausdigital-bill/blob/master/docs/eInvoicing_Semantic_Model_v1.0.pdf) are re-stated here but are broken down according to the invoice document usage context as identified by the ProfielID element.  
 
