@@ -1,2 +1,2 @@
-# Billing Semantic Specification
- * [Version 1.0](/docs/1.0/index.md)
+# AusDigital Billing Semantic Specification
+ * [Version 1.0](/1.0)

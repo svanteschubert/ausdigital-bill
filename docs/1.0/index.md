@@ -1,7 +1,79 @@
- * Spec ID: ausdigital.org/bill/1.0
+ * Spec ID: ausdigital.org/ausdigital-bill/1.0
  * ![raw](http://rfc.unprotocols.org/spec:2/COSS/raw.svg)
- * Editor: Steven Capell steven.capell@gosource.com.au
+ * Editor: [Steven Capell](mailto:steven.capell@gosource.com.au)
  * Contributors: 
+
+# AusDigital BIlling Sematics (BILL) 1.0 Specification
+
+This document describes the AusDigital BIlling Sematics (BILL) 1.0 Specification. TBA.
+
+
+## Goals
+
+TBA.
+
+These are achieved by:
+
+ * TBA.
+
+
+## Status
+
+This spec is an early draft for consuiltation.
+
+This specification aims to support the Australian Digital Business Council
+[eInvoicing initiative](http://ausdigital.org), and is under active
+development at
+[https://github.com/ausdigital/ausdigital-bill](https://github.com/ausdigital/ausdigital-bill).
+
+Comments and feedback are encouraged and welcome. Pull requests with improvements are welcome too.
+
+## Glossary
+
+Phrase | Definition
+------------ | -------------
+ausdigital-bill/1 | This specification.
+ausdigital-code/1 | Version 1 of the AusDigital [Code Lists Management](http://ausdigital.org/code-lists) specification.
+ausdigital-syn/1 | Version 1 of the AusDigital [UBL Syntax(SYN)](http://ausdigital.org/syn) specification.
+ausdigital-syn/2 | Version 2 of the AusDigital [UBL Syntax(SYN)](http://ausdigital.org/syn) specification.
+ausdigital-dcl/1 | Version 1 of the [AusDigtial](http://ausdigital.org) [Digital Capability Locator (DCL)](https://ausdigital-dcl.readthedocs.io) specification
+ausdigital-dcp/1 | Version 1 of the AusDigtial [Digital Capability Provider (DCP)](https://ausdigital-dcp.readthedocs.io) specification
+ausdigital-idp/1 | Version 1 of the AusDigital [Identity Provider (IDP)](https://ausdigital-idp.readthedocs.io) specification.
+ausdigital-nry/1 | Version 1 of the AusDigital [Notary (NRY)](https://ausdigital-nry.readthedocs.io) specification.
+ausdigital-tap/1 | Version 1 of the AusDigital [Transaction Access Point(TAP)](http://ausdigital.org/transaction-access-point) specification.
+ausdigital-tap/2 | Version 2 of the AusDigital [Transaction Access Point(TAP)](http://ausdigital.org/transaction-access-point) specification.
+ausdigital-tap-gw/1 | Version 1 of the AusDigital [Transaction Access Point Gateway(TAP-GW)](http://ausdigital.org/tap-gateway) specification.
+
+This service depends on - TBA.
+
+The TBA specification depends on this document. Note, TBA.
+ 
+## Licence
+
+Copyright (c) 2016 the Editor and Contributors. All rights reserved.
+
+This Specification is free software; you can redistribute it and/or modify it under the
+terms of the GNU General Public License as published by the Free Software Foundation; 
+either version 3 of the License, or (at your option) any later version.
+
+This Specification is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program;
+if not, see [http://www.gnu.org/licenses](http://www.gnu.org/licenses).
+
+ 
+## Change Process
+
+ This document is governed by the [2/COSS](http://rfc.unprotocols.org/spec:2/COSS/) (COSS).
+
+## Language
+
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" 
+in this document are to be interpreted as described in RFC 2119.
+
+# Billing Process
 
 ## Invoice Document Profiles
 
@@ -14,11 +86,11 @@
  * Credit note sent from seller to buyer that references an earlier standard invoice ("ProfileID":"dbc:creditnote")
  * Debiit note sent from buyer to seller that references an earlier RCTI ("ProfileID":"dbc:debitnote")
 
- The detailed business vlaidation rules for each invoice profile are defined in the billing rules specification.
+The detailed business vlaidation rules for each invoice profile are defined in [Validation Rules](#validation-rules).
 
 ## Document Response Codes
 
- A UBL document response provides a means for the receiver party to update the sender on the processing state of the invoice.  The set of valid document response codes depends on the business process identified by the ProcessID (which is the same as the customizationID in UBL instances) are
+A UBL document response provides a means for the receiver party to update the sender on the processing state of the invoice.  The set of valid document response codes depends on the business process identified by the ProcessID (which is the same as the customizationID in UBL instances) are
 
  * Acknowledged - confirms receipt of the invoice (but does not imply approval to pay).
  * Approved - means that the payer has approved the invoice for (future) payment in accordance with payment terms.
@@ -27,9 +99,9 @@
 
 ## State Lifecycle
 
- The diagram shows the allowed set of states for an invoice as understood by both parties in the collaborative process.  Every transition from one state to another is triggered by the echange of a business message - which could be either an invoice (one of six profiles) or a response document (with one of four response codes).
+The diagram shows the allowed set of states for an invoice as understood by both parties in the collaborative process.  Every transition from one state to another is triggered by the echange of a business message - which could be either an invoice (one of six profiles) or a response document (with one of four response codes).
 
- ![Billing State Lifecycle](Billing-StateLifecycle.png)
+![Billing State Lifecycle](Billing-StateLifecycle.png)
 
  * The TaxReceipt has the simplest lifecycle because it is just a record of a previous payment and so there is only a single invoice (profileID=taxreceipt) sent from seller to buyer and the state is "paid".  No document response needed.
  * The receipt of an RCTI (profileID=rcti) by a seller from a buyer takes the state directly to "approved" because this is a payer initiated transaction.  However the payer may subsequently send an invoice (profileID=debitnote) to make an adjustment to the rcti prior to eventual payment is accordance with payment terms.
@@ -42,50 +114,51 @@
 
 # UBL Syntax 1.0 Billing Document Specifications
 
- The billing process is supported by the invoice document (six variants) and the response document (four status codes) as described in the [billing process](Billing-Process.md) model.  This page specifies the required invoice and response document models.
+The billing process is supported by the invoice document (six variants) and the response document (four status codes) as described in the [billing process](#billing-process) model.  This section specifies the required invoice and response document models.
 
 ## Invoice Document
 
- Is defined by the DBC [CoreInvoice XML Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/syn-v1/spec/v1.0.0/maindoc/CoreInvoice-1.0.xsd) library.
+Is defined by the DBC [CoreInvoice XML Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/syn-v1/spec/v1.0.0/maindoc/CoreInvoice-1.0.xsd) library.
 
  * **[Invoice Samples](https://github.com/ausdigital/ausdigital-bill/tree/master/syn-v1/samples/Invoice/)**
 
 ## Response Document
 
- Is defined by the DBC [Document Response XML Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/syn-v1/spec/v1.0.0/maindoc/Response-1.0.xsd) library.
+Is defined by the DBC [Document Response XML Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/syn-v1/spec/v1.0.0/maindoc/Response-1.0.xsd) library.
 
  * **[Response Sample](https://github.com/ausdigital/ausdigital-bill/tree/master/syn-v1/samples/Response/SampleResponse-ConformantResponse.xml)**
 
- The response document is a generic structure for all UBL document responses.  The generic response becomes a meaningful invoice response via the correct population of two key fields:
- * "profileID" which MUST be one of the 6 invoice profiles define in the [billing process](Billing-Process.md#invoice-document-profiles)
- * "statusReasonCode" which MUST contain one of the 4 values defined in the [invoice response codes](Billing-Process.md#document-response-codes) 
+The response document is a generic structure for all UBL document responses.  The generic response becomes a meaningful invoice response via the correct population of two key fields:
+ * "profileID" which MUST be one of the 6 invoice profiles define in the [billing process](#invoice-document-profiles)
+ * "statusReasonCode" which MUST contain one of the 4 values defined in the [invoice response codes](#document-response-codes) 
  
+
 # UBL Syntax 2.0 Billing Document Specifications
 
- The billing process is supported by the invoice document (six variants) and the response document (four status codes) as described in the [billing process](Billing-Process.md) model.  This page specifies the required invoice and response document models.
+The billing process is supported by the invoice document (six variants) and the response document (four status codes) as described in the [billing process](#billing-process) model.  This page specifies the required invoice and response document models.
 
 ## Invoice Document
 
- Is defined by the [Invoice Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/syn/spec/v1.0.0/Invoice.json) which is a simple single root JSON Schema that is a semantically equivalent representation of the DBC [CoreInvoice XML Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/syn-v1/spec/v1.0.0/maindoc/CoreInvoice-1.0.xsd) library.
+Is defined by the [Invoice Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/syn/spec/v1.0.0/Invoice.json) which is a simple single root JSON Schema that is a semantically equivalent representation of the DBC [CoreInvoice XML Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/syn-v1/spec/v1.0.0/maindoc/CoreInvoice-1.0.xsd) library.
 
  * **[Browsable Invoice Schema](http://ausdigital.org/docson.html#https://raw.githubusercontent.com/ausdigital/ausdigital-bill/master/syn/spec/v1.0.0/Invoice.json)**
  * **[Invoice Samples](https://github.com/ausdigital/ausdigital-bill/tree/master/syn/samples/Invoice/)**
 
 ## Response Document
 
- Is defined by the [Response Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/syn/spec/v1.0.0/Response.json) which is a simple single root JSON Schema that is a semantically equivalent representation of the DBC [Document Response XML Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/syn-v1/spec/v1.0.0/maindoc/Response-1.0.xsd) library.
+Is defined by the [Response Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/syn/spec/v1.0.0/Response.json) which is a simple single root JSON Schema that is a semantically equivalent representation of the DBC [Document Response XML Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/syn-v1/spec/v1.0.0/maindoc/Response-1.0.xsd) library.
 
  * **[Browsable Response Schema](http://ausdigital.org/docson.html#https://raw.githubusercontent.com/ausdigital/ausdigital-bill/master/syn/spec/v1.0.0/Response.json)**
  * **[Response Sample](https://github.com/ausdigital/ausdigital-bill/blob/master/syn/samples/Response/SampleResponse-ConformantResponse.json)**
 
- The response document is a generic structure for all UBL document responses.  The generic response becomes a meaningful invoice response via the correct population of two key fields:
+The response document is a generic structure for all UBL document responses.  The generic response becomes a meaningful invoice response via the correct population of two key fields:
 
- * "profileID" which MUST be one of the 6 invoice profiles define in the [billing process](Billing-Process.md#invoice-document-profiles)
- * "statusReasonCode" which MUST contain one of the 4 values defined in the [invoice response codes](Billing-Process.md#document-response-codes)
+ * "profileID" which MUST be one of the 6 invoice profiles define in the [invoice document profiles](#invoice-document-profiles)
+ * "statusReasonCode" which MUST contain one of the 4 values defined in the [invoice response codes](#document-response-codes)
 
 # Validation Rules
 
- Validation rules from the [DBC e-invoice semantic model](https://github.com/ausdigital/ausdigital-bill/blob/master/docs/eInvoicing_Semantic_Model_v1.0.pdf) are re-stated here but are broken down according to the invoice document usage context as identified by the ProfielID element.  
+Validation rules from the [ADBC eInvoicing Semantic Model](https://github.com/ausdigital/ausdigital-bill/blob/master/docs/1.0/eInvoicing_Semantic_Model_v1.0.pdf) are re-stated here but are broken down according to the invoice document usage context as identified by the ProfielID element.  
 
 ### Validation Rules - Common
 | Rule | Mandatory | Optional | Extension |
@@ -204,30 +277,3 @@
 
  tbd
  
-
-## Licence
-
- Copyright (c) 2016 the Editor and Contributors. All rights reserved.
-
- This Specification is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
-
- This Specification is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
- You should have received a copy of the GNU General Public License along with this program; if not, see [http://www.gnu.org/licenses](http://www.gnu.org/licenses).
-
- 
-## Change Process
-
- This document is governed by the [2/COSS](http://rfc.unprotocols.org/spec:2/COSS/) (COSS).
-
-## Language
-
- The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119.
-
-## Goals
-
- TBD...
-
-# Related Material
-
- * TBD...
