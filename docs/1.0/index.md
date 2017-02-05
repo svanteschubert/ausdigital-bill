@@ -36,7 +36,7 @@ ausdigital-bill/1 | This specification.
 ausdigital-code/1 | Version 1 of the AusDigital [Code Lists Management](http://ausdigital.org/code-lists) specification.
 ausdigital-syn/1 | Version 1 of the AusDigital [UBL Syntax(SYN)](http://ausdigital.org/syn) specification.
 ausdigital-syn/2 | Version 2 of the AusDigital [UBL Syntax(SYN)](http://ausdigital.org/syn) specification.
-ausdigital-dcl/1 | Version 1 of the [AusDigtial](http://ausdigital.org) [Digital Capability Locator (DCL)](https://ausdigital-dcl.readthedocs.io) specification
+ausdigital-dcl/1 | Version 1 of the AusDigital [Digital Capability Locator (DCL)](https://ausdigital-dcl.readthedocs.io) specification
 ausdigital-dcp/1 | Version 1 of the AusDigtial [Digital Capability Provider (DCP)](https://ausdigital-dcp.readthedocs.io) specification
 ausdigital-idp/1 | Version 1 of the AusDigital [Identity Provider (IDP)](https://ausdigital-idp.readthedocs.io) specification.
 ausdigital-nry/1 | Version 1 of the AusDigital [Notary (NRY)](https://ausdigital-nry.readthedocs.io) specification.
