@@ -118,15 +118,15 @@ The billing process is supported by the invoice document (six variants) and the 
 
 ## Invoice Document
 
-Is defined by the DBC [CoreInvoice XML Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/syn-v1/spec/v1.0.0/maindoc/CoreInvoice-1.0.xsd) library.
+Is defined by the DBC [CoreInvoice XML Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/resources/ausdigital-syn/1.0/spec/maindoc/CoreInvoice-1.0.xsd) library.
 
- * **[Invoice Samples](https://github.com/ausdigital/ausdigital-bill/tree/master/syn-v1/samples/Invoice/)**
+ * **[Invoice Samples](https://github.com/ausdigital/ausdigital-bill/tree/master/resources/ausdigital-syn/1.0/samples/Invoice/)**
 
 ## Response Document
 
-Is defined by the DBC [Document Response XML Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/syn-v1/spec/v1.0.0/maindoc/Response-1.0.xsd) library.
+Is defined by the DBC [Document Response XML Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/resources/ausdigital-syn/1.0/spec/maindoc/Response-1.0.xsd) library.
 
- * **[Response Sample](https://github.com/ausdigital/ausdigital-bill/tree/master/syn-v1/samples/Response/SampleResponse-ConformantResponse.xml)**
+ * **[Response Sample](https://github.com/ausdigital/ausdigital-bill/blob/master/resources/ausdigital-syn/1.0/samples/Response/SampleResponse-ConformantResponse.xml)**
 
 The response document is a generic structure for all UBL document responses.  The generic response becomes a meaningful invoice response via the correct population of two key fields:
  * "profileID" which MUST be one of the 6 invoice profiles define in the [billing process](#invoice-document-profiles)
@@ -139,17 +139,17 @@ The billing process is supported by the invoice document (six variants) and the 
 
 ## Invoice Document
 
-Is defined by the [Invoice Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/syn/spec/v1.0.0/Invoice.json) which is a simple single root JSON Schema that is a semantically equivalent representation of the DBC [CoreInvoice XML Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/syn-v1/spec/v1.0.0/maindoc/CoreInvoice-1.0.xsd) library.
+Is defined by the [Invoice Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/resources/ausdigital-syn/2.0/spec/Invoice.json) which is a simple single root JSON Schema that is a semantically equivalent representation of the DBC [CoreInvoice XML Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/resources/ausdigital-syn/1.0/spec/maindoc/CoreInvoice-1.0.xsd) library.
 
- * **[Browsable Invoice Schema](http://ausdigital.org/docson.html#https://raw.githubusercontent.com/ausdigital/ausdigital-bill/master/syn/spec/v1.0.0/Invoice.json)**
- * **[Invoice Samples](https://github.com/ausdigital/ausdigital-bill/tree/master/syn/samples/Invoice/)**
+ * **[Browsable Invoice Schema](http://ausdigital.org/docson.html#https://raw.githubusercontent.com/ausdigital/ausdigital-bill/master/resources/ausdigital-syn/2.0/spec/Invoice.json)**
+ * **[Invoice Samples](https://github.com/ausdigital/ausdigital-bill/tree/master/resources/ausdigital-syn/2.0/samples/Invoice/)**
 
 ## Response Document
 
-Is defined by the [Response Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/syn/spec/v1.0.0/Response.json) which is a simple single root JSON Schema that is a semantically equivalent representation of the DBC [Document Response XML Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/syn-v1/spec/v1.0.0/maindoc/Response-1.0.xsd) library.
+Is defined by the [Response Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/resources/ausdigital-syn/2.0/spec/Response.json) which is a simple single root JSON Schema that is a semantically equivalent representation of the DBC [Document Response XML Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/resources/ausdigital-syn/1.0/spec/maindoc/Response-1.0.xsd) library.
 
- * **[Browsable Response Schema](http://ausdigital.org/docson.html#https://raw.githubusercontent.com/ausdigital/ausdigital-bill/master/syn/spec/v1.0.0/Response.json)**
- * **[Response Sample](https://github.com/ausdigital/ausdigital-bill/blob/master/syn/samples/Response/SampleResponse-ConformantResponse.json)**
+ * **[Browsable Response Schema](http://ausdigital.org/docson.html#https://raw.githubusercontent.com/ausdigital/ausdigital-bill/master/resources/ausdigital-syn/2.0/spec/Response.json)**
+ * **[Response Sample](https://github.com/ausdigital/ausdigital-bill/blob/master/resources/ausdigital-syn/2.0/samples/Response/SampleResponse-ConformantResponse.json)**
 
 The response document is a generic structure for all UBL document responses.  The generic response becomes a meaningful invoice response via the correct population of two key fields:
 
