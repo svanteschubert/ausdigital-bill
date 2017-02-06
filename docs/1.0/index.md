@@ -1,9 +1,10 @@
 ---
 title: "AusDigital Billing Semantics (BILL) 1.0 Specification"
 permalink: /ausdigital-bill/1.0/
+specID: ausdigital.org/ausdigital-bill/1.0/
 status: ![raw](http://rfc.unprotocols.org/spec:2/COSS/raw.svg)
-Editor: [Steven Capell](mailto:steven.capell@gosource.com.au)
-Contributors: 
+editors: [Steven Capell](mailto:steven.capell@gosource.com.au)
+contributors: 
 ---
 
 ## Introduction
