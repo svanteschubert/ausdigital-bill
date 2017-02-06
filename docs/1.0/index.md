@@ -3,7 +3,7 @@
  * Editor: [Steven Capell](mailto:steven.capell@gosource.com.au)
  * Contributors: 
 
-# AusDigital BIlling Sematics (BILL) 1.0 Specification
+# AusDigital Billing Semantics (BILL) 1.0 Specification
 
 ## Introduction
 
@@ -272,3 +272,10 @@ Validation rules from the [ADBC eInvoicing Semantic Model](https://github.com/au
 
  tbd
  
+# Related Material
+
+ * ADBC eInvoicing Semantic Model (v1.0, available [here](https://github.com/ausdigital/ausdigital-bill/blob/master/docs/1.0/eInvoicing_Semantic_Model_v1.0.pdf)), which provides background to the [AusDigital](http://ausdigital.org) community process.
+ * [GitHub issues](https://github.com/ausdigital/ausdigital-bill/issues/) for collaborating on the development of the BILL.
+ * A reference [BILL service](https://bill.testpoint.io/) (for testing and development purposes).
+ * Free, Open-Source Software [BILL implementation](https://github.com/test-point/testpoint-bill).
+ * An automated [DCL test suite](https://github.com/test-point/testpoint-bill).

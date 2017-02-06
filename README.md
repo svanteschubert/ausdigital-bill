@@ -5,3 +5,9 @@ The AusDigital Billing Specification is based on [OASIS UBL2.1](http://docs.oasi
 [ADBC implementation guides](https://github.com/ausdigital/ausdigital-syn/blob/master/docs/1.0/eInvoicing_Implementation_Guide_v1.0.pdf).
 
  * [Version 1.0](/docs/1.0/index.md)
+ 
+ * Specification: [https://ausdigital-bill.readthedocs.io/](https://ausdigital-bill.readthedocs.io/)
+ * Community discussion/support: [ausdigital.org](http://ausdigital.org)
+ * Open source reference implementation: [https://github.com/test-point/testpoint-bill/](https://github.com/test-point/testpoint-bill)
+ * Test suite: [https://github.com/test-point/testpoint-bill](https://github.com/test-point/testpoint-bill)
+ * Live test endpoint: [https://bill.testpoint.io/](https://bill.testpoint.io/)
