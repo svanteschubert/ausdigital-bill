@@ -6,7 +6,7 @@ The AusDigital Billing Specification is based on [OASIS UBL2.1](http://docs.oasi
 
  * [Version 1.0](/docs/1.0/index.md)
  
-Specification: [BILL 1.0](http://ausdigital.org/ausdigital-bill/1.0/)
+Specification: [BILL 1.0](http://ausdigital.org/specs/ausdigital-bill/1.0/)
 
 Community discussion/support: [ausdigital.org](http://ausdigital.org)
 
