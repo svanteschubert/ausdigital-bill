@@ -108,6 +108,17 @@ The diagram shows the allowed set of states for an invoice as understood by both
   - an outright rejection of the invoice by the buyer which leads to a cancelled end-state.
  * The "success" end state in all cases is "paid" - indicated by the receipt of a payment record from a bank reconciliation file (outside of the scope of this specification).
 
+# Transport Layer Bindings
+
+The invoice document is exchanged in accordance with the [TAP protocol](http://ausdigital.org/specs/ausdigital-tap/2.0/0). This paragraph describes the binding between the business seamntic layer and the TAP messaging protocol layer.  
+
+As a buyer and seller ledger, I need a way to connect business semantics to message semantics with a unique and durable key such as a conversationID GUID so that I can share it with interested third parties and limit what they can see to just the transaction I want to share.  This requirement is met as folows:
+
+* The invoice state lifecycle defines the scope of an e-invoice "conversation"
+* There should be a unique identifier for each "conversation" and it MUST be placed into the TAP header "reference" field
+* The identifier SHOULD be a GUID but MAY be a URI of the form {mydomain}.{identifier} created by the initiator of the conversation.
+* The identifier MUST be maintained by the participating (buyer and seller) ledgers as the durable link between the business layer and messaging layer.
+
 # UBL Syntax 1.0 Billing Document Specifications
 
 The billing process is supported by the invoice document (six variants) and the response document (four status codes) as described in the [billing process](#billing-process) model.  This section specifies the required invoice and response document models.
