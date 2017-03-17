@@ -110,7 +110,7 @@ The diagram shows the allowed set of states for an invoice as understood by both
 
 # Transport Layer Bindings
 
-The invoice document is exchanged in accordance with the [TAP protocol](http://ausdigital.org/specs/ausdigital-tap/2.0/0). This paragraph describes the binding between the business seamntic layer and the TAP messaging protocol layer.  
+The invoice document is exchanged in accordance with the [TAP protocol](http://ausdigital.org/specs/ausdigital-tap/2.0/). This paragraph describes the binding between the business seamntic layer and the TAP messaging protocol layer.  
 
 As a buyer and seller ledger, I need a way to connect business semantics to message semantics with a unique and durable key such as a conversationID GUID so that I can share it with interested third parties and limit what they can see to just the transaction I want to share.  This requirement is met as folows:
 
