@@ -46,6 +46,10 @@
           "type": "string",
           "format": "date"
         },
+        "UnusedDefDate": {
+          "type": "string",
+          "format": "date"
+        },
         "DueDate": {
           "type": "string",
           "format": "date"
