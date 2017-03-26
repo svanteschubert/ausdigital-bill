@@ -247,7 +247,7 @@
       "required": ["PartyIdentification", "PartyName"],
       "properties": {
         "PartyIdentification": {
-          "$ref": "#/definitions/ID"
+          "$ref": "#/definitions/ID1"
         },
         "PartyName": {
           "$ref": "#/definitions/Name"
