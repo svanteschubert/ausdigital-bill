@@ -46,10 +46,6 @@
           "type": "string",
           "format": "date"
         },
-        "UnusedDefDate": {
-          "type": "string",
-          "format": "date"
-        },
         "DueDate": {
           "type": "string",
           "format": "date"
@@ -335,6 +331,15 @@
     },
     "ID": {
       "title": "Identification GUID",
+      "required": ["ID"],
+      "properties": {
+        "ID": {
+          "type": "string"
+        }
+      }
+    },
+    "UnusedID": {
+      "title": "UnusedIdentification GUID",
       "required": ["ID"],
       "properties": {
         "ID": {
