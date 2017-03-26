@@ -346,6 +346,15 @@
           "type": "string"
         }
       }
+    },
+    "AnotherUnusedID": {
+      "title": "UnusedIdentification GUID",
+      "required": ["ID"],
+      "properties": {
+        "ID": {
+          "type": "string"
+        }
+      }
     }
   }
 }
