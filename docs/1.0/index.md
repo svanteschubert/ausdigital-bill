@@ -13,11 +13,14 @@ This document describes the AusDigital Billing Semantics (BILL) 1.0 Specificatio
 
 ## Goals
 
-TBA.
+* To provide a clear and unambiguous specification for the exchange of invoices between any two business systems.
+* To ensure that there is sufficient business value to both the buyer (accounts payable automation) and the supplier (accounts receivable automation) so that there is a compelling buisness case for implementation.
 
 These are achieved by:
 
- * TBA.
+* A strong focus on the invoice state lifecycle and the interactions that change the state of an invoice - particularly the response documents from buyer to seller.
+* Coverage of all invoice types (invoice, debit note, credit note, adjustment invoice, RCTI, tax receipt)
+* A clear mapping from process context to document properties and business rules that are relevant to the process.
 
 
 ## Status
@@ -107,6 +110,7 @@ The diagram shows the allowed set of states for an invoice as understood by both
   - an issue of a credit note against an existing invoice (profileID = creditnote) - also usually in response to a disputed status.
   - an outright rejection of the invoice by the buyer which leads to a cancelled end-state.
  * The "success" end state in all cases is "paid" - indicated by the receipt of a payment record from a bank reconciliation file (outside of the scope of this specification).
+ * In some cases a received invoice may be invalid (ie unreadable or does not comply with mandatory business rules).  In that case, the invoice is rejected and the state becomes "invalid".  The sender must fix and start again.
 
 # Transport Layer Bindings
 
@@ -115,8 +119,9 @@ The invoice document is exchanged in accordance with the [TAP protocol](http://a
 As a buyer and seller ledger, I need a way to connect business semantics to message semantics with a unique and durable key such as a conversationID GUID so that I can share it with interested third parties and limit what they can see to just the transaction I want to share.  This requirement is met as folows:
 
 * The invoice state lifecycle defines the scope of an e-invoice "conversation"
-* There should be a unique identifier for each "conversation" and it MUST be placed into the TAP header "reference" field
-* The identifier SHOULD be a GUID but MAY be a URI of the form {mydomain}.{identifier} created by the initiator of the conversation.
+* There MUST be a unique identifier for each "conversation" and it MUST be placed into the TAP header "reference" field
+* The identifier MUST created by the initiator of the conversation
+* The identifier MAY be a business level identifier such as in invoice number so long as it is unique between buyer and seller (ie no other conversations with the same identifier can exist).
 * The identifier MUST be maintained by the participating (buyer and seller) ledgers as the durable link between the business layer and messaging layer.
 
 # UBL Syntax 1.0 Billing Document Specifications
