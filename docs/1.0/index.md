@@ -116,13 +116,27 @@ The diagram shows the allowed set of states for an invoice as understood by both
 
 The invoice document is exchanged in accordance with the [TAP protocol](http://ausdigital.org/specs/ausdigital-tap/2.0/). This paragraph describes the binding between the business seamntic layer and the TAP messaging protocol layer.  
 
-As a buyer and seller ledger, I need a way to connect business semantics to message semantics with a unique and durable key such as a conversationID GUID so that I can share it with interested third parties and limit what they can see to just the transaction I want to share.  This requirement is met as folows:
+## Conversations
 
-* The invoice state lifecycle defines the scope of an e-invoice "conversation"
+As a buyer and seller ledger, I need a way to connect business semantics to message semantics with a unique and durable key such as a  so that I can share it with interested third parties and limit what they can see to just the transaction I want to share.  This requirement is met as folows:
+
+* The invoice state lifecycle defines the scope of one e-invoice "conversation"
 * There MUST be a unique identifier for each "conversation" and it MUST be placed into the TAP header "reference" field
 * The identifier MUST created by the initiator of the conversation
 * The identifier MAY be a business level identifier such as in invoice number so long as it is unique between buyer and seller (ie no other conversations with the same identifier can exist).
 * The identifier MUST be maintained by the participating (buyer and seller) ledgers as the durable link between the business layer and messaging layer.
+
+## Attachments
+
+In many cases, the seller may wish to send additional documents together with the UBL invoice.  Typical examples are:
+
+* a human readable PDF version of the invoice, or 
+* a timesheet that supports the charges in the invoice, or
+* a metering breakdown that supports a utility invoice.
+
+These are sent as separate "attachment" messages at any time after the related semantic document.  The attachment message is handled like any other message in the e-invoicing exchange except that it:
+
+* MUST include the TAP header "attachedTo" property which MUST contain the same value as the "hash" property of the referenced message.
 
 # UBL Syntax 1.0 Billing Document Specifications
 
