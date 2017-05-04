@@ -1,8 +1,9 @@
 {
     "Invoice": {
+        "documentIdentifier": "digitalbusinesscouncil.com.au::urn:oasis:names:specification:ubl:schema:xsd:Invoice-2::Invoice##UBL-2.1",
         "ublVersionID": "2.1",
-        "customizationID": "urn:resources.digitalbusinesscouncil.com.au:dbc:invoicing:documents:core invoice:xsd::core invoice 1##urn:resources.digitalbusinesscouncil.com.au:dbc:einvoicing:process:einvoicing03:ver1.0",
-        "profileID": "urn:resources.digitalbusinesscouncil.com.au:dbc:einvoicing:ver1.0",
+        "customizationID": "digitalbusinesscouncil.com.au",
+        "profileID": "credit-note:v1.0",
         "id": "TOSL-108-A",
         "issueDate": "2016-07-01",
         "dueDate": "2016-08-01",
