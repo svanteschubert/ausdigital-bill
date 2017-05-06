@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "urn:oasis:names:specification:ubl:schema:xsd:Invoice-2#",
+  "id": "https://raw.githubusercontent.com/ausdigital/ausdigital-bill/master/resources/ausdigital-syn/2.0/spec/Invoice.json",
   "type": "object",
   "definitions": {
     "InvoiceType": {
@@ -1027,6 +1027,10 @@
   "properties": {
     "Invoice": {
       "$ref": "#/definitions/InvoiceType"
+    },
+    "_D": {
+      "type": "string",
+      "enum": ["urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"]
     }
   },
   "required": ["Invoice"]

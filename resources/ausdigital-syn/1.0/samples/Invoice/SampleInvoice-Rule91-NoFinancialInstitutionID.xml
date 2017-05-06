@@ -2,8 +2,8 @@
 <!--Sample XML file with examples of possible values for a NON conformant eInvoice: Rule 91 - No Financial Institution Identifier -->
 <n2:Invoice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:n1="http://www.altova.com/samplexml/other-namespace" xmlns:n2="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2 CoreInvoice-1.0.xsd">
 	<cbc:UBLVersionID>2.1</cbc:UBLVersionID>
-	<cbc:CustomizationID schemeAgencyID="dbc">urn:resources.digitalbusinesscouncil.com.au:dbc:invoicing:documents:core invoice:xsd::core invoice 1##urn:resources.digitalbusinesscouncil.com.au:dbc:einvoicing:process:einvoicing01:ver1.0</cbc:CustomizationID>
-	<cbc:ProfileID schemeAgencyID="dbc">urn:resources.digitalbusinesscouncil.com.au:dbc:einvoicing:ver1.0</cbc:ProfileID>
+	<cbc:CustomizationID>digitalbusinesscouncil.com.au</cbc:CustomizationID>
+	<cbc:ProfileID>bill-invoice-v1</cbc:ProfileID>
 	<cbc:ID>TOSL-108-A</cbc:ID>
 	<cbc:IssueDate>2016-07-01</cbc:IssueDate>
 	<cbc:DueDate>2016-08-01</cbc:DueDate>
