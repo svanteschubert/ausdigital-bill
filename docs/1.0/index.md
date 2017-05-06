@@ -78,16 +78,16 @@ in this document are to be interpreted as described in RFC 2119.
 
 UBL CustomizationID is an identifier for a defined customization of UBL.
 
-For AusDigital BILL it is "digitalbusinesscouncil.com.au" ("CustomizationID":"digitalbusinesscouncil.com.au").
+For AusDigital BILL it is "digitalbusinesscouncil.com.au" (`"CustomizationID":"digitalbusinesscouncil.com.au"`).
 
 The Invoice document is used in six different process contexts, indicated using the UBL ProfileID.
 
- * Standard invoice from seller to buyer ("ProfileID":"bill-invoice-v1")
- * Updated standard invoice from seller to buyer that replaces a pervious invoice of the same ID ("ProfileID":"bill-adjustment-v1")
- * Recipient created tax invoice from buyer to seller ("ProfileID":"bill-rcti-v1")
- * Tax receipt sent from seller to buyer after payment has been made - usually for POS or online purchases ("ProfileID":"bill-taxreceipt-v1")
- * Credit note sent from seller to buyer that references an earlier standard invoice ("ProfileID":"bill-creditnote-v1")
- * Debit note sent from buyer to seller that references an earlier RCTI ("ProfileID":"bill-debitnote-v1")
+ * Standard invoice from seller to buyer (`"ProfileID":"bill-invoice-v1"`)
+ * Updated standard invoice from seller to buyer that replaces a pervious invoice of the same ID (`"ProfileID":"bill-adjustment-v1"`)
+ * Recipient created tax invoice from buyer to seller (`"ProfileID":"bill-rcti-v1"`)
+ * Tax receipt sent from seller to buyer after payment has been made - usually for POS or online purchases (`"ProfileID":"bill-taxreceipt-v1"`)
+ * Credit note sent from seller to buyer that references an earlier standard invoice (`"ProfileID":"bill-creditnote-v1"`)
+ * Debit note sent from buyer to seller that references an earlier RCTI (`"ProfileID":"bill-debitnote-v1"`)
 
 The detailed business validation rules for each invoice profile are defined in [Validation Rules](#validation-rules).
 
@@ -106,12 +106,12 @@ The diagram shows the allowed set of states for an invoice as understood by both
 
 ![Billing State Lifecycle](./Billing-StateLifecycle.png)
 
- * The TaxReceipt has the simplest lifecycle because it is just a record of a previous payment and so there is only a single invoice ("ProfileID":"bill-taxreceipt-v1") sent from seller to buyer and the state is "paid".  No document response needed.
- * The receipt of an RCTI ("ProfileID":"bill-rcti-v1") by a seller from a buyer takes the state directly to "approved" because this is a payer initiated transaction.  However the payer may subsequently send an invoice ("ProfileID":"bill-debitnote-v1") to make an adjustment to the rcti prior to eventual payment is accordance with payment terms.
+ * The TaxReceipt has the simplest lifecycle because it is just a record of a previous payment and so there is only a single invoice (`"ProfileID":"bill-taxreceipt-v1"`) sent from seller to buyer and the state is "paid".  No document response needed.
+ * The receipt of an RCTI (`"ProfileID":"bill-rcti-v1"`) by a seller from a buyer takes the state directly to "approved" because this is a payer initiated transaction.  However the payer may subsequently send an invoice (`"ProfileID":"bill-debitnote-v1"`) to make an adjustment to the rcti prior to eventual payment is accordance with payment terms.
  * The standard invoice that is a demand for future payment from seller to buyer is the most complex lifecycle because there can be 
   - various response documents indicating buyer processing status (acknowledged, approved, disputed, rejected)
-  - a re-issue of the invoice with changes ("ProfileID":"bill-adjustment-v1") from seller to buyer - usually in response to a disputed status.
-  - an issue of a credit note against an existing invoice ("ProfileID":"bill-creditnote-v1") - also usually in response to a disputed status.
+  - a re-issue of the invoice with changes (`"ProfileID":"bill-adjustment-v1"`) from seller to buyer - usually in response to a disputed status.
+  - an issue of a credit note against an existing invoice (`"ProfileID":"bill-creditnote-v1"`) - also usually in response to a disputed status.
   - an outright rejection of the invoice by the buyer which leads to a cancelled end-state.
  * The "success" end state in all cases is "paid" - indicated by the receipt of a payment record from a bank reconciliation file (outside of the scope of this specification).
  * In some cases a received invoice may be invalid (ie unreadable or does not comply with mandatory business rules).  In that case, the invoice is rejected and the state becomes "invalid".  The sender must fix and start again.
