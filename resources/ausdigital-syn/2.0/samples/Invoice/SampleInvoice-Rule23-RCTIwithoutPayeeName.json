@@ -2,7 +2,7 @@
     "_D":"urn:oasis:names:specification:ubl:schema:xsd:Invoice-2",
     "Invoice": {
         "ublVersionID": "2.1",
-        "customizationID": "digitalbusinesscouncil.com.au",
+        "customizationID": "ausdigital.org",
         "profileID": "bill-rcti-v1",
         "id": "TOSL-108-A",
         "issueDate": "2016-07-01",

@@ -74,11 +74,13 @@ in this document are to be interpreted as described in RFC 2119.
 
 # Billing Process
 
-## Invoice Document Profiles
+## AusDigital UBL Customization
 
 UBL CustomizationID is an identifier for a defined customization of UBL.
 
-For AusDigital BILL it is "digitalbusinesscouncil.com.au" (`"CustomizationID":"digitalbusinesscouncil.com.au"`).
+For AusDigital BILL it is "ausdigital.org" (`"CustomizationID":"ausdigital.org"`).
+
+## Invoice Document Profiles
 
 The Invoice document is used in six different process contexts, indicated using the UBL ProfileID.
 
@@ -91,14 +93,20 @@ The Invoice document is used in six different process contexts, indicated using 
 
 The detailed business validation rules for each invoice profile are defined in [Validation Rules](#validation-rules).
 
-## Document Response Codes
+## Application Response Document Profile for AusDigital BILL
+
+The Invoice document is used in six different process contexts, indicated using the UBL ProfileID.
+
+ * Application response to AusDigital BILL Invoice (`"ProfileID":"bill-response-v1"`)
+
+## Application Response Codes for AusDigital BILL 
 
 A UBL document response provides a means for the receiver party to update the sender on the processing state of the invoice.  The set of valid document response codes depends on the business process identified by the ProcessID (which is the same as the customizationID in UBL instances) are
 
- * Acknowledged - confirms receipt of the invoice (but does not imply approval to pay).
- * Approved - means that the payer has approved the invoice for (future) payment in accordance with payment terms.
- * Disputed - means that the payer has not accepted the invoice and will dispute some or all of the invoice.
- * Rejected - means that the payer has rejected the entire invoice and will not be paying.  
+ * `"responseCode":"acknowledged"` - confirms receipt of the invoice (but does not imply approval to pay).
+ * `"responseCode":"approved"` - means that the payer has approved the invoice for (future) payment in accordance with payment terms.
+ * `"responseCode":"disputed"` - means that the payer has not accepted the invoice and will dispute some or all of the invoice.
+ * `"responseCode":"rejected"` - means that the payer has rejected the entire invoice and will not be paying.  
 
 ## State Lifecycle
 
