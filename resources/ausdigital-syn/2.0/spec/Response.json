@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2#",
+  "id": "https://raw.githubusercontent.com/ausdigital/ausdigital-bill/master/resources/ausdigital-syn/2.0/spec/Response.json",
   "type": "object",
   "definitions": {
     "ApplicationResponseType": {
@@ -341,6 +341,10 @@
   "properties": {
     "ApplicationResponse": {
       "$ref": "#/definitions/ApplicationResponseType"
+    },
+    "_D": {
+      "type": "string",
+      "enum": ["urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2"]
     }
   },
   "required": ["ApplicationResponse"]
