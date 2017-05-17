@@ -130,11 +130,11 @@ When used to indicate invoice status information in the BILL lifecycle, the appl
 
 A UBL document response provides a means for the receiver party to update the sender on the processing state of the invoice.  The set of valid document response codes is defined by the state lifecyle.  The allowed values are:
 
- * `"responseCode":"invalid"` - returned by the recipient ledger if the invoice document does not validate.  Error details should be sent in the "description" element.
- * `"responseCode":"acknowledged"` - confirms receipt of the invoice (but does not imply approval to pay).
- * `"responseCode":"approved"` - means that the payer has approved the invoice for (future) payment in accordance with payment terms.
- * `"responseCode":"disputed"` - means that the payer has not accepted the invoice and will dispute some or all of the invoice.
- * `"responseCode":"rejected"` - means that the payer has rejected the entire invoice and will not be paying.  
+ * `"responseCode":"UT"` - invalid, returned by the recipient ledger if the invoice document does not validate.  Error details should be sent in the "description" element.
+ * `"responseCode":"AB"` - acknowledged, confirms receipt of the invoice (but does not imply approval to pay).
+ * `"responseCode":"AP"` - approved, means that the payer has approved the invoice for (future) payment in accordance with payment terms.
+ * `"responseCode":"DI"` - disputed, means that the payer has not accepted the invoice and will dispute some or all of the invoice.
+ * `"responseCode":"RE"` - rejected, means that the payer has rejected the entire invoice and will not be paying.  
 
 # Transport Layer Bindings
 
