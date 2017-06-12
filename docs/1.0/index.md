@@ -136,6 +136,25 @@ A UBL document response provides a means for the receiver party to update the se
  * `"responseCode":"DI"` - disputed, means that the payer has not accepted the invoice and will dispute some or all of the invoice.
  * `"responseCode":"RE"` - rejected, means that the payer has rejected the entire invoice and will not be paying.  
 
+# Service Registry Bindings
+
+This section describes how the Digital Capability Publisher Service Metadata structure should be populated in order to describe a participant's support for the BILL specification.
+
+## Document Identifier
+
+"DocumentIdentifier" MUST follow the global SMP and UBL specifications for a UBL invoice to indicate simply that this is a UBL 2 invoice document.. Namely 
+
+* "scheme"="bdx-docid-qns" and
+* "value"="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" 
+
+## Process Identifier
+
+The DCP "ProcessIdentifier" identifies the process context and so MUST map directly to the UBL ProfileID:
+
+* "Scheme" = "digitalbusinesscouncil.com.au" and
+* "value" = the same as the UBL "ProfileID" value - "bill-rcti-v1" 
+
+
 # Transport Layer Bindings
 
 The invoice document is exchanged in accordance with the [TAP protocol](http://ausdigital.org/specs/ausdigital-tap/2.0/). This paragraph describes the binding between the business seamntic layer and the TAP messaging protocol layer.  
