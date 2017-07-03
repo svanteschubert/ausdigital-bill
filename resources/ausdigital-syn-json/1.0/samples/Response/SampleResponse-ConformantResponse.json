@@ -24,7 +24,7 @@
         "documentResponse": [
             {
                 "response": {
-                    "responseCode": "acknowledged",
+                    "responseCode": "AB",
                     "description": [
                         "Receipt of the invoice is confirmed, but does not imply approval to pay."
                     ]

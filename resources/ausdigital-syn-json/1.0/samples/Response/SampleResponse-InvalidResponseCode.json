@@ -1,0 +1,41 @@
+{
+    "_D":"urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2",
+    "ApplicationResponse": {
+        "ublVersionID": "2.1",
+        "customizationID": "ausdigital.org",
+        "profileID": "bill-response-v1",
+        "id": "RESP-0201991",
+        "issueDate": "2016-05-01",
+        "issueTime": "09:30:47+05:00",
+        "senderParty": {
+            "partyIdentification": [
+                {
+                    "ABN": "51083392303"
+                }
+            ]
+        },
+        "receiverParty": {
+            "partyIdentification": [
+                {
+                    "GLN": "4035811611014"
+                }
+            ]
+        },
+        "documentResponse": [
+            {
+                "response": {
+                    "responseCode": "UT",
+                    "description": [
+                        "Receipt of the invoice is confirmed, but does not imply approval to pay."
+                    ]
+                },
+                "documentReference": [
+                    {
+                        "id": "TOSL-108-A",
+                        "documentType": "Invoice"
+                    }
+                ]
+            }
+        ]
+    }
+}
