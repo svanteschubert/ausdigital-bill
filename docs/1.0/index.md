@@ -209,7 +209,7 @@ The billing process is supported by the invoice document (six variants) and the 
 
 ## Invoice Document
 
-Is defined by the [Invoice Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/resources/ausdigital-syn-json/1.0/spec/Invoice.json) which is a simple single root JSON Schema that is a semantically equivalent representation of the DBC [CoreInvoice XML Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/resources/ausdigital-syn-xml /1.0/spec/maindoc/CoreInvoice-1.0.xsd) library.
+Is defined by the [Invoice Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/resources/ausdigital-syn-json/1.0/spec/Invoice.json) which is a simple single root JSON Schema that is a semantically equivalent representation of the DBC [CoreInvoice XML Schema](https://github.com/ausdigital/ausdigital-bill/blob/master/resources/ausdigital-syn-xml/1.0/spec/maindoc/CoreInvoice-1.0.xsd) library.
 
  * **[Browsable Invoice Schema](http://ausdigital.org/docson.html#https://raw.githubusercontent.com/ausdigital/ausdigital-bill/master/resources/ausdigital-syn-json/1.0/spec/Invoice.json)**
  * **[Invoice Samples](https://github.com/ausdigital/ausdigital-bill/tree/master/resources/ausdigital-syn-json/1.0/samples/Invoice/)**
