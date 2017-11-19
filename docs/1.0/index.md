@@ -8,7 +8,7 @@ contributors:
 
 ## Introduction
 
-This document describes the AusDigital Billing Semantics (BILL) 1.0 Specification. It is not yet a proposed standard, only an early draft for discussion.
+This document describes the AusDigital Billing Semantics (BILL) 1.0 Specification. It is not yet a proposed standard (only an early draft for discussion).
 
 
 ## Goals
